@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NewsAnalyzer by Balashov Maxim</title>
+  <link type="text/css" rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body>
+  <div class="root">
+    <header class="header">
+      <section class="header__top">
+        <div class="content-margin-l-r">
+          <h2 class="header__logo">NewsAnalyzer</h2>
+          <nav class="header__links">
+            <a href="" class="header__link">Главная</a>
+            <a href="" class="header__link">О проекте</a>
+          </nav>
+        </div>
+      </section>
+      <section class="header__bottom">
+        <h1 class="header__title">Что в мире творится?</h1>
+        <p class="header__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</p>
+        <form action="">
+          <input class="input" type="text" placeholder="Введите тему новости">
+          <button class="button">Искать</button>
+        </form>
+      </section>
+    </header>
+    <main class="main">
+      <section class="loading">
+
+      </section>
+      <section class="nothing-find">
+        
+      </section>
+      <section class="results">
+        
+      </section>
+      <section class="about-author">
+          <div class="content-margin-l-r">
+            <img class="about-author__photo" src="" alt="">
+            <div class="about-author__discription">
+              <h2 class="about-author__title">Об авторе</h2>
+              <p class="about-author__comment">
+                  Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, 
+                  какими технологиями разработки владете. <br>
+                  <br>Также можно рассказать о процессе обучения в Практикуме, 
+                  чему вы тут научились, и чем можете помочь потенциальным заказчикам.
+              </p>
+            </div>
+          </div>
+      </section>
+      <footer class="footer">
+
+      </footer>
+    </main>
+  </div>
+</body>
+<script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
+</html>
