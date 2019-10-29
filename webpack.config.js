@@ -33,7 +33,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|gif|ico|svg)$/i,
+                test: /\.(png|gif|ico)$/i,
                 use: [
                     'file-loader?name=./images/[name].[ext]', 
                     {
@@ -42,7 +42,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.jpg$/i,
+                test: /\.(jpg|svg)$/i,
                 use: [
                     {
                     loader: 'file-loader',

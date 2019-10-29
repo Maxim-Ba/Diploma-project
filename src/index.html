@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Приложение - поиск новостей(дипломный проект Яндекс Практикум)"> 
+  <meta name="author" content="Balashov Maxim">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer by Balashov Maxim</title>
   <link type="text/css" rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="icon" href="<%=require('./images/favicon/A-blue.svg')%>">
 </head>
 <body>
   <div class="root">
@@ -30,13 +33,34 @@
     </header>
     <main class="main">
       <section class="loading">
-
+        <i class="loading__circle-preloader"></i>
+        <h3 class="loading__message">Идет поиск новостей...</h3>
       </section>
       <section class="nothing-find">
-        
+        <img class="nothing-find__logo" src="" alt="" >
+        <h3 class="nothing-find__title">Ничего не найдено</h3>
+        <p class="nothing-find__subtitle">К сожалению по вашему запросу ничего не найдено.</p>
       </section>
       <section class="results">
-        
+        <div class="content-margin-l-r">
+          <h3 class="results__title">Результаты поиска</h3>
+          <span class="results__analitic">Посмотреть аналитику ></span>
+        </div>  
+        <div class="content-margin-l-r content-margin-l-r_flex">
+            <article class="article">
+              <a class="article__link" href="#">
+                <img src="" alt="" class="article__img">
+                <h3 class="article__title">Национальное достояние – парки</h3>
+                <p class="article__discription">
+                  В 2016 году Америка отмечала важный юбилей: 
+                  сто лет назад здесь начала складываться система национальных парков – 
+                  охраняемых территорий, где и сегодня каждый может приобщиться к природе. 
+                </p>
+                <p class="article__source">Лента.ру</p>
+              </a>
+            </article>
+        </div>
+        <button class="article__button">Показать еще</button>
       </section>
       <section class="about-author">
           <div class="content-margin-l-r">
@@ -53,7 +77,18 @@
           </div>
       </section>
       <footer class="footer">
-
+          <div class="content-margin-l-r">
+            <p class="footer__author">&#169; 2019 Supersite</p>
+            <nav class="footer__nav">
+              <a href="" class="footer__nav-link">Главная</a>
+              <a href="" class="footer__nav-link">О проекте</a>
+              <a href="" class="footer__nav-link">Яндекс.Практикум</a>
+            </nav>
+            <nav class="footer__social-links">
+              <a href="" class="footer__social-link"><img class="foter__icon" src="" alt=""></a>
+              <a href="" class="footer__social-link"><img class="foter__icon" src="" alt=""></a>
+            </nav>
+          </div>
       </footer>
     </main>
   </div>
