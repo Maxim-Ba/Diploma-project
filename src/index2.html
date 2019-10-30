@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Приложение - поиск новостей(дипломный проект Яндекс Практикум)"> 
+  <meta name="author" content="Balashov Maxim">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NewsAnalyzer by Balashov Maxim</title>
+  <link type="text/css" rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="icon" href="<%=require('./images/favicon/A-blue.svg')%>">
+</head>
+<body>
+  <div class="root">
+    <header class="header">
+      <section class="header__top">
+        <div class="content-margin-l-r">
+          <h2 class="header__logo">NewsAnalyzer</h2>
+          <nav class="header__links">
+            <a href="" class="header__link">Главная</a>
+            <a href="" class="header__link">О проекте</a>
+          </nav>
+        </div>
+      </section>
+      <section class="header__analitics">
+        <div class="content-margin-l-r">
+          <h3 class="header__title">Главная / Аналитика</h3>
+          <h1 class="header__main-title">Вы спросили: «Путешествия»</h1>
+          <p class="header__subtitle">Новостей за неделю: 
+            <span class="header__mark">34 324</span>
+          </p>
+          <p class="header__subtitle">Упоминаний в загаловках:
+            <span class="header__mark">235</span>
+          </p>
+        </div>
+      </section>
+    </header>
+    <main class="analitica">
+      <div class="content-margin-l-r">
+        <h2 class="analitica__header">Аналитика по дням</h2>
+        <article class="analitica__diagram">
+          <div class="analitica-container">
+            <p class="analitica__diagram-header">Дата (Месяц)</p>
+            <p class="analitica__diagram-header">Колличество упоминаний</p>
+          </div>
+          <div class="analitica-container">
+            <div class="analitica__diagram-empty"></div>
+            <div class="analitica__scale">
+              <p class="analitica__scale-number">0</p>
+              <p class="analitica__scale-number">25</p>
+              <p class="analitica__scale-number">50</p>
+              <p class="analitica__scale-number">75</p>
+              <p class="analitica__scale-number">100</p>
+            </div>
+          </div>
+          <div class="analitica-container">
+              <p class="analitica__diagram-day">19, пн</p>
+              <div class="analitica__blue-grafic"></div>
+          </div>
+          <div class="analitica-container">
+              <p class="analitica__diagram-day">20, вт</p>
+              <div class="analitica__blue-grafic"></div>
+          </div>
+          <div class="analitica-container">
+              <p class="analitica__diagram-day">21, ср</p>
+              <div class="analitica__blue-grafic"></div>
+          </div>
+          <div class="analitica-container">
+              <p class="analitica__diagram-day">22, чт</p>
+              <div class="analitica__blue-grafic"></div>
+          </div>
+          <div class="analitica-container">
+              <p class="analitica__diagram-day">23, пт</p>
+              <div class="analitica__blue-grafic"></div>
+          </div>
+          <div class="analitica-container">
+              <p class="analitica__diagram-day">24, сб</p>
+              <div class="analitica__blue-grafic"></div>
+          </div>
+          <div class="analitica-container">
+              <p class="analitica__diagram-day">25, вс</p>
+              <div class="analitica__blue-grafic"></div>
+          </div>
+          <div class="analitica-container">
+              <div class="analitica__diagram-empty"></div>
+              <div class="analitica__scale">
+                <p class="analitica__scale-number">0</p>
+                <p class="analitica__scale-number">25</p>
+                <p class="analitica__scale-number">50</p>
+                <p class="analitica__scale-number">75</p>
+                <p class="analitica__scale-number">100</p>
+              </div>
+        </article>
+      </div>
+      
+      
+    </main>
+    <footer class="footer">
+          <div class="content-margin-l-r">
+            <p class="footer__author">&#169; 2019 Supersite</p>
+            <nav class="footer__nav">
+              <a href="" class="footer__nav-link">Главная</a>
+              <a href="" class="footer__nav-link">О проекте</a>
+              <a href="" class="footer__nav-link">Яндекс.Практикум</a>
+            </nav>
+            <nav class="footer__social-links">
+              <a href="" class="footer__social-link"><img class="foter__icon" src="" alt=""></a>
+              <a href="" class="footer__social-link"><img class="foter__icon" src="" alt=""></a>
+            </nav>
+          </div>
+    </footer>
+    
+  </div>
+</body>
+<script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</html>

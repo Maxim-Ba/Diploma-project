@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Приложение - поиск новостей(дипломный проект Яндекс Практикум)"> 
+  <meta name="author" content="Balashov Maxim">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NewsAnalyzer by Balashov Maxim</title>
+  <link type="text/css" rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="icon" href="<%=require('./images/favicon/A-blue.svg')%>">
+</head>
+<body>
+  <div class="root">
+    <header class="header">
+      <section class="header__top">
+        <div class="content-margin-l-r">
+          <h2 class="header__logo">NewsAnalyzer</h2>
+          <nav class="header__links">
+            <a href="" class="header__link">Главная</a>
+            <a href="" class="header__link">О проекте</a>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <main class="main">
+      <section class="for-clients">
+          <div class="content-margin-l-r">
+            <h1 class="for-clients__title">Клиентам</h1>
+            <p class="for-clients__information">Этот сайт — дипломный проект студента Яндкс.Практикума. Его цель — показать, чему научился студент, и какими технологиями владеет.
+                <br><br>
+                Вёртска сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциальность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.
+                <br><br>
+                Карточки с новостям приходят с сервера и обрабатываются асихронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.
+                <br><br>
+                При создании проекта была использона сборка технологией Webpack. Это современных подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также настроена сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем у них не будет проблем с отображением. А значит потенциальная аудитория возрастает.
+                <br><br>
+                Проект был проверен экспертами Яндекс.Практикума. И если вашему бизесу нужен сайт, мы рекомендуем обратиться к этому студенту.
+            </p>
+          </div>
+      </section>
+      <section class="technologies">
+          <div class="content-margin-l-r">
+            <h2 class="technologies__title">Используемые технологии</h2>
+            <div class="technologies__list-of-tech">
+              <div class="technologies__item-tech">
+                <p class="technologies__item-header">HTML</p>
+                <img class="technologies__item-img" src="" alt="">
+              </div>
+              <div class="technologies__item-tech">
+                <p class="technologies__item-header">CSS</p>
+                <img class="technologies__item-img" src="" alt="">
+              </div>
+              <div class="technologies__item-tech">
+                <p class="technologies__item-header">Java Script</p>
+                <img class="technologies__item-img" src="" alt="">
+              </div>
+              <div class="technologies__item-tech">
+                <p class="technologies__item-header">Webpack</p>
+                <img class="technologies__item-img" src="" alt="">
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="about-author">
+          <div class="content-margin-l-r">
+            <img class="about-author__photo" src="" alt="">
+            <div class="about-author__discription">
+              <h2 class="about-author__title">Об авторе</h2>
+              <p class="about-author__comment">
+                  Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, 
+                  какими технологиями разработки владете. <br>
+                  <br>Также можно рассказать о процессе обучения в Практикуме, 
+                  чему вы тут научились, и чем можете помочь потенциальным заказчикам.
+              </p>
+            </div>
+          </div>
+      </section>
+      <section class="git">
+        <header class="git__head">
+          <h2 class="git__title">История коммитов из GitHub</h2>
+          <a href="" class="git__open">Открыть в Github ></a>
+        </header>
+        <div class="git__slider">
+          <article class="card">
+            <div class="card__container">
+              <p class="card__date">14 августа, 2019</p>
+              <cite class="card__author">Антон Долинин</cite>
+              <img class="card__img" src="" alt="">
+              <blockquote class="card__comment">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can greatly improve your HTML & CSS workflow.</blockquote>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+          <div class="content-margin-l-r">
+            <p class="footer__author">&#169; 2019 Supersite</p>
+            <nav class="footer__nav">
+              <a href="" class="footer__nav-link">Главная</a>
+              <a href="" class="footer__nav-link">О проекте</a>
+              <a href="" class="footer__nav-link">Яндекс.Практикум</a>
+            </nav>
+            <nav class="footer__social-links">
+              <a href="" class="footer__social-link"><img class="foter__icon" src="" alt=""></a>
+              <a href="" class="footer__social-link"><img class="foter__icon" src="" alt=""></a>
+            </nav>
+          </div>
+    </footer>
+    
+  </div>
+</body>
+<script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</html>
