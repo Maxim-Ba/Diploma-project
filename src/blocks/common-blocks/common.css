@@ -1,0 +1,4 @@
+.content-margin-l-r{
+    margin: 0 auto;
+    width: calc(1232*100%/1440);
+}
