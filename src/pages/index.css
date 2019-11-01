@@ -5,16 +5,22 @@
     font-weight : normal;
 };
 @font-face{
-    font-family: Roboto Slab;
+    font-family: Roboto-Slab;
     src : url('../vendor/fonts/RobotoSlab-Regular.ttf') format('ttf'); 
     font-style : normal;  
     font-weight : normal;
 };
 @font-face{
-    font-family: Roboto Slab;
+    font-family: Roboto-Slab;
     src : url('../vendor/fonts//RobotoSlab-Bold.ttf') format('ttf'); 
     font-style : normal;  
     font-weight : bold;
+};
+@font-face{
+    font-family: Source-Sans-Pro;
+    src : url('../vendor/fonts/SourceSansPro-Regular.ttf') format('ttf'); 
+    font-style : normal;  
+    font-weight : normal;
 };
 @import url(../vendor/normalize.css);
 @import url(../blocks/common-blocks/common.css);
@@ -26,5 +32,5 @@
     margin:0 auto;
     background: #FFFFFF;
     font-size: 10px;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: Roboto, sans-serif;
 }
