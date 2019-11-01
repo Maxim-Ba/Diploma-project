@@ -1,0 +1,30 @@
+.loading{
+padding-top: 80px;
+padding-bottom: 80px;
+background: #F5F6F7;
+}
+
+.loading__message{
+    font-size: 180%;
+    line-height: calc(24/18);
+    text-align: center;
+    margin-top: 24px;
+    color: #B6BCBF;
+}
+
+.loading__circle-preloader {
+	display: block;
+	width: 74px;
+	height: 74px;
+	border: 4px solid #444;
+	border-bottom-color: #888;
+	border-radius: 50%;
+	margin: auto;
+	animation: spin .75s infinite linear;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,33 @@
+.nothing-find{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 85px;
+    padding-bottom: 80px;
+}
+.nothing-find__logo{
+
+}
+.nothing-find__title{
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 260%;
+    line-height: calc(30/26);
+    text-align: center;
+    color: #1A1B22;
+    margin-top: 31.5px;
+    margin-bottom: 16px;
+}
+.nothing-find__subtitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 180%;
+    line-height: calc(24/18);
+    text-align: center;
+    color: #B6BCBF;
+    display: block;
+    margin:  0 auto;
+    width: calc(256*100%/1440);
+}
