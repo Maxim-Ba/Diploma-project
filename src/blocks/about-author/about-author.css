@@ -12,11 +12,26 @@
     width: calc(464*100%/1232);
 }
 .about-author__discription{
-
+    padding-bottom: 199px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .about-author__title{
-
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 400%;
+    line-height: calc(46/40);
+    margin-bottom: 24px;
+    margin-top: 0;
+    color: #1A1B22;
 }
 .about-author__comment{
-
+    font-size: 180%;
+    line-height: calc(24/18);
+    width: calc(600*100%/712);
+    margin-top: 0;
+    color: #1A1B22;
+    margin-bottom: 0;
 }
