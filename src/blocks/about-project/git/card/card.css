@@ -1,0 +1,46 @@
+.card{
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding-left: calc(24*100%/1440);
+    padding-right: calc(24*100%/1440);
+    padding-top: 24px;
+    width: calc(400*100%/1440);
+    box-sizing: border-box;
+}
+.card__container{
+    display: flex;
+
+}
+.card__date{
+    font-size: 140%;
+    line-height: calc(22/14);
+    color: #B6BCBF;
+    margin: 0 0 16px;
+}
+.card__author{
+    font-family: Roboto-Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 260%;
+    line-height: calc(30/26);
+    margin: 4px 0 2px;
+}
+.card__email{
+    font-size: 140%;
+    line-height: calc(22/14);
+    color: #1A1B22;
+    margin: 0;
+}
+.card__img{
+    margin-right: calc(16*100%/400);
+    height: 100%;
+}
+.card__mark{
+    background: #F5F6F7;
+}
+.card__comment{
+    font-size: 160%;
+    line-height: calc(22/16);
+    color: #1A1B22;
+    margin: 16px 0 0;
+}

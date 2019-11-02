@@ -25,12 +25,11 @@
 @import url(../vendor/normalize.css);
 @import url(../blocks/common-blocks/common.css);
 @import url(../blocks/header/header.css);
-@import url(../blocks/main/main.css);
+@import url(../blocks/header/_no-background.css);
 @import url(../blocks/footer/footer.css);
-/* index1 */
-@import url(../blocks/about-project/about-project.css);
 
-/* index2 */
+
+
 .root{
     width: 1440px;
     margin:0 auto;

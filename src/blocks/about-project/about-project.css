@@ -1,6 +1,6 @@
 @import url(./for-clients/for-clients.css);
 @import url(./technologies/technologies.css);
-
+@import url(./git/git.css);
 .about-project{
     color: #1A1B22;
 }

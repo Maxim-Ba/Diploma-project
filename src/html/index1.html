@@ -40,24 +40,24 @@
           </div>
       </section>
       <section class="technologies">
-          <div class="content-margin-l-r">
+          <div class="content-margin-l-r technologies__container">
             <h2 class="technologies__title">Используемые технологии</h2>
             <ul class="technologies__list-of-tech">
               <li class="technologies__item-tech">
                 <p class="technologies__item-header">HTML</p>
-                <img class="technologies__item-img" src="" alt="">
+                <img class="technologies__item-img" src="<%=require('../images/html.svg')%>" alt="">
               </li>
               <li class="technologies__item-tech">
                 <p class="technologies__item-header">CSS</p>
-                <img class="technologies__item-img" src="" alt="">
+                <img class="technologies__item-img" src="<%=require('../images/css.svg')%>" alt="">
               </li>
               <li class="technologies__item-tech">
                 <p class="technologies__item-header">Java Script</p>
-                <img class="technologies__item-img" src="" alt="">
+                <img class="technologies__item-img" src="<%=require('../images/js.svg')%>" alt="">
               </li>
               <li class="technologies__item-tech">
                 <p class="technologies__item-header">Webpack</p>
-                <img class="technologies__item-img" src="" alt="">
+                <img class="technologies__item-img" src="<%=require('../images/webpack.svg')%>" alt="">
               </li>
             </ul>
           </div>
@@ -77,18 +77,45 @@
         </div>
       </section>
       <section class="git">
-        <header class="git__head">
+        <header class="git__head content-margin-l-r">
           <h2 class="git__title">История коммитов из GitHub</h2>
-          <a href="" class="git__open">Открыть в Github ></a>
+          <a class="git__open" href="" >Открыть в Github ></a>
         </header>
         <div class="git__slider">
           <article class="card">
+            <p class="card__date">14 августа, 2019</p>
             <div class="card__container">
-              <p class="card__date">14 августа, 2019</p>
-              <cite class="card__author">Антон Долинин</cite>
-              <img class="card__img" src="" alt="">
-              <blockquote class="card__comment">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can greatly improve your HTML & CSS workflow.</blockquote>
+              
+              <img class="card__img" src="<%=require('../images/avatar.jpg')%>" alt="">
+              <div class="container-flex">
+                <cite class="card__author">Антон Долинин</cite>
+                <p class="card__email">ingaiva@yandex.ru</p>
+              </div>
             </div>
+              <blockquote class="card__comment">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can greatly improve your HTML & CSS workflow.</blockquote>
+          </article>
+          <article class="card">
+            <p class="card__date">14 августа, 2019</p>
+            <div class="card__container">
+                <img class="card__img" src="<%=require('../images/avatar.jpg')%>" alt="">
+                <div class="container-flex">
+                  <cite class="card__author">Антон Долинин</cite>
+                  <p class="card__email">ingaiva@yandex.ru</p>
+                </div>
+            </div>
+              <blockquote class="card__comment">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open <span class="card__mark">Tools > Plugins > Available plugins</span>  and find and install Emmet plugin.</blockquote>
+          </article>
+          <article class="card">
+            <p class="card__date">14 августа, 2019</p>
+            <div class="card__container">
+                <img class="card__img" src="<%=require('../images/avatar.jpg')%>" alt="">
+                <div class="container-flex">
+                  <cite class="card__author">Антон Долинин</cite>
+                  <p class="card__email">ingaiva@yandex.ru</p>
+                </div>
+            </div>  
+              <blockquote class="card__comment">With Emmet, you can type CSS-like expressions that can be dynamically parsed, and produce output depending on what you type in the abb... </blockquote>
+            
           </article>
         </div>
       </section>
