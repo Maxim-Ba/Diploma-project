@@ -7,18 +7,18 @@
   <meta name="author" content="Balashov Maxim">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer by Balashov Maxim</title>
-  <link type="text/css" rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
-  <link rel="icon" href="<%=require('./images/favicon/A-blue.svg')%>">
+  <link type="text/css" rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.index1.css %>">
+  <link rel="icon" href="<%=require('../images/favicon/A-blue.svg')%>">
 </head>
 <body>
   <div class="root">
-    <header class="header">
+    <header class="header header_no-background">
       <section class="header__top">
-        <div class="content-margin-l-r">
-          <h2 class="header__logo">NewsAnalyzer</h2>
+        <div class="content-margin-l-r header__container">
+          <h2 class="header__logo header__logo_color-black">NewsAnalyzer</h2>
           <nav class="header__links">
             <a href="" class="header__link">Главная</a>
-            <a href="" class="header__link">О проекте</a>
+            <a href="./index1.html" class="header__link header__link_active header__link_color-black">О проекте</a>
           </nav>
         </div>
       </section>
@@ -42,39 +42,39 @@
       <section class="technologies">
           <div class="content-margin-l-r">
             <h2 class="technologies__title">Используемые технологии</h2>
-            <div class="technologies__list-of-tech">
-              <div class="technologies__item-tech">
+            <ul class="technologies__list-of-tech">
+              <li class="technologies__item-tech">
                 <p class="technologies__item-header">HTML</p>
                 <img class="technologies__item-img" src="" alt="">
-              </div>
-              <div class="technologies__item-tech">
+              </li>
+              <li class="technologies__item-tech">
                 <p class="technologies__item-header">CSS</p>
                 <img class="technologies__item-img" src="" alt="">
-              </div>
-              <div class="technologies__item-tech">
+              </li>
+              <li class="technologies__item-tech">
                 <p class="technologies__item-header">Java Script</p>
                 <img class="technologies__item-img" src="" alt="">
-              </div>
-              <div class="technologies__item-tech">
+              </li>
+              <li class="technologies__item-tech">
                 <p class="technologies__item-header">Webpack</p>
                 <img class="technologies__item-img" src="" alt="">
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
       </section>
       <section class="about-author">
-          <div class="content-margin-l-r">
-            <img class="about-author__photo" src="" alt="">
-            <div class="about-author__discription">
-              <h2 class="about-author__title">Об авторе</h2>
-              <p class="about-author__comment">
-                  Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, 
-                  какими технологиями разработки владете. <br>
-                  <br>Также можно рассказать о процессе обучения в Практикуме, 
-                  чему вы тут научились, и чем можете помочь потенциальным заказчикам.
-              </p>
-            </div>
+        <div class="content-margin-l-r about-author__container">
+          <img class="about-author__photo" src="<%=require('../images/author-photo.jpg')%>" alt="">
+          <div class="about-author__discription">
+            <h2 class="about-author__title">Об авторе</h2>
+            <p class="about-author__comment">
+                Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, 
+                какими технологиями разработки владете. <br>
+                <br>Также можно рассказать о процессе обучения в Практикуме, 
+                чему вы тут научились, и чем можете помочь потенциальным заказчикам.
+            </p>
           </div>
+        </div>
       </section>
       <section class="git">
         <header class="git__head">
@@ -94,21 +94,21 @@
       </section>
     </main>
     <footer class="footer">
-          <div class="content-margin-l-r">
-            <p class="footer__author">&#169; 2019 Supersite</p>
-            <nav class="footer__nav">
-              <a href="" class="footer__nav-link">Главная</a>
-              <a href="" class="footer__nav-link">О проекте</a>
-              <a href="" class="footer__nav-link">Яндекс.Практикум</a>
-            </nav>
-            <nav class="footer__social-links">
-              <a href="" class="footer__social-link"><img class="foter__icon" src="" alt=""></a>
-              <a href="" class="footer__social-link"><img class="foter__icon" src="" alt=""></a>
-            </nav>
-          </div>
-    </footer>
+      <div class="content-margin-l-r footer__container">
+        <p class="footer__author">&#169; 2019 Supersite</p>
+        <nav class="footer__nav">
+          <a href="#" class="footer__nav-link">Главная</a>
+          <a href="#" class="footer__nav-link">О проекте</a>
+          <a href="#" class="footer__nav-link">Яндекс.Практикум</a>
+        </nav>
+        <nav class="footer__social-links">
+          <a href="https://github.com/Maxim-Ba/Diploma-project" class="footer__social-link"><img class="foter__icon" src="<%=require('../images/gh-icon.svg')%>" alt=""></a>
+          <a href="#" class="footer__social-link"><img class="foter__icon" src="<%=require('../images/facebook-icon.svg')%>" alt=""></a>
+        </nav>
+      </div>
+  </footer>
     
   </div>
 </body>
-<script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+<script type="module" src="<%= htmlWebpackPlugin.files.chunks.index1.entry %>"></script>
 </html>

@@ -1,0 +1,16 @@
+.for-clients{
+    padding: 80px 0 94px;
+}
+.for-clients__title{
+    font-family: Roboto-Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 400%;
+    line-height: calc(46/40);
+    margin-bottom: 24px;
+}
+.for-clients__information{
+    font-size: 180%;
+    line-height: calc(24/18);
+    width: calc(815*100%/1232);
+}
