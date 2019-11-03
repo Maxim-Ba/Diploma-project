@@ -1,0 +1,31 @@
+.general-data-analytics{
+    background: #FFFFFF;
+    padding: 40px 0 76px;
+}
+.general-data-analytics__title{
+    font-size: 180%;
+    line-height: calc(24/18);
+    color: #1A1B22;
+    margin: 0 0 80px;
+}
+.general-data-analytics__mark-grey{
+    color: #B6BCBF;
+}
+.general-data-analytics__query{
+    font-family: Roboto-Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 400%;
+    line-height: calc(46/40);
+    margin: 0 0 24px;
+    color: #1A1B22;
+}
+.general-data-analytics__statistics{
+    font-size: 180%;
+    line-height: calc(24/18);
+    color: #1A1B22;
+    margin: 0 0 4px;
+}
+.general-data-analytics__mark{
+    font-weight: bold;
+}

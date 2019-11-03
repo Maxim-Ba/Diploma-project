@@ -1,0 +1,14 @@
+@import url(./diagram/diagram.css);
+.detail-analytics{
+    background: #F5F6F7;
+    padding: 80px 0 72px;
+}
+.detail-analytics__title{
+    font-family: Roboto-Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 260%;
+    line-height: calc(30/26);
+    margin: 0 0 48px;
+    color: #1A1B22;
+}

@@ -21,7 +21,7 @@
     width: calc(404*100%/1232);
 }
 .footer__nav-link{
-    font-size: 180%;
+    font-size: 1.25vw;
     line-height: calc(24/18);
     text-align: center;
     color: #1A1B22;
@@ -35,3 +35,4 @@
     margin-left: 28px;
     display: block;
 }
+@media screen and (max-width: 768px) and (min-width: 321px)

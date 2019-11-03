@@ -29,17 +29,19 @@
     text-decoration: none;
     color: #B6BCBF;
     margin-left: 34px;
+    padding-bottom: 23px;
 
 }
 .header__link_active{
     color: #fff;
+    border-bottom: #ffffff 3px solid;
 
 
 }
-.header__link_active::after{
+/* .header__link_active::after{
     display: block;
     background: #ffffff;
     content: '';
     height: 3px;
-    margin-top: 23px;
-}
+    margin-bottom: 23px;
+} */

@@ -1,0 +1,110 @@
+.diagram{
+    display: flex;
+    flex-direction: column;
+}
+.diagram__top{
+    display: flex;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #1A1B22;
+}
+.diagram__date{
+    font-size: 120%;
+    line-height: calc(16/12);
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    margin: 0;
+    position: relative;
+}
+.diagram__date::after{
+    display: block;
+    content: '(Авгутс)';
+    position: absolute;
+}
+.diagram__amount{
+    font-size: 120%;
+    line-height: calc(16/12);
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    margin: 0;
+
+}
+.diagram__scale{
+    display: flex;
+    padding-top: 16px;
+}
+.diagram__empty-block{
+
+}
+.diagram__numbers{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.diagram__number{
+    font-size: 120%;
+    line-height: calc(16/12);
+    text-align: center;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    margin: 0;
+    
+}
+.diagram__row{
+    display: flex;
+    margin-bottom: 56px;
+}
+.diagram__day{
+    margin: 0;
+    font-size: 180%;
+    color: #1A1B22;
+    display: flex;
+    align-items: center;
+}
+.diagram__line{
+    font-weight: bold;
+    font-size: 120%;
+    line-height: calc(16/12);
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    overflow: hidden;
+    background: linear-gradient(to right, #2F71E5 15%, #F5F6F7 15%, #F5F6F7 100%);
+}
+.day-1{
+    background: linear-gradient(to right, #2F71E5 15%, #F5F6F7 15%, #F5F6F7 100%);
+}
+.day-2{
+    background: linear-gradient(to right, #2F71E5 18%, #F5F6F7 18%, #F5F6F7 100%);
+}
+.day-3{
+    background: linear-gradient(to right, #2F71E5 11%, #F5F6F7 11%, #F5F6F7 100%);
+}
+.day-4{
+    background: linear-gradient(to right, #2F71E5 39%, #F5F6F7 39%, #F5F6F7 100%);
+}
+.day-5{
+    background: linear-gradient(to right, #2F71E5 45%, #F5F6F7 45%, #F5F6F7 100%);
+}
+.day-6{
+    background: linear-gradient(to right, #2F71E5 73%, #F5F6F7 73%, #F5F6F7 100%);
+}
+.day-7{
+    background: linear-gradient(to right, #2F71E5 34%, #F5F6F7 34%, #F5F6F7 100%);
+}
+
+.diagram__row_margin-b-0{
+    margin-bottom: 0;
+}
+.diagram__left-column{
+    width: calc(104*100%/1232);
+}
+.diagram__right-column{
+    width: calc(1128*100%/1232);
+}
