@@ -17,49 +17,78 @@
         <div class="content-margin-l-r header__container">
           <h2 class="header__logo header__logo_color-black">NewsAnalyzer</h2>
           <nav class="header__links">
-            <a href="" class="header__link">Главная</a>
+            <a href="./index.html" class="header__link">Главная</a>
             <a href="./index1.html" class="header__link header__link_active header__link_color-black">О проекте</a>
           </nav>
         </div>
       </section>
     </header>
-    <main class="about-project">
-      <section class="for-clients">
+    <main class="analytics-block">
+      <section class="general-data-analytics">
           <div class="content-margin-l-r">
-            <h1 class="for-clients__title">Клиентам</h1>
-            <p class="for-clients__information">Этот сайт — дипломный проект студента Яндкс.Практикума. Его цель — показать, чему научился студент, и какими технологиями владеет.
-                <br><br>
-                Вёртска сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциальность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.
-                <br><br>
-                Карточки с новостям приходят с сервера и обрабатываются асихронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.
-                <br><br>
-                При создании проекта была использона сборка технологией Webpack. Это современных подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также настроена сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем у них не будет проблем с отображением. А значит потенциальная аудитория возрастает.
-                <br><br>
-                Проект был проверен экспертами Яндекс.Практикума. И если вашему бизесу нужен сайт, мы рекомендуем обратиться к этому студенту.
-            </p>
+            <h1 class="general-data-analytics__title">Главная / Аналитика</h1>
+            <h2 class="general-data-analytics__query">Вы спросили: «Путешествия»</h2>
+            <p class="general-data-analytics__statistics">Новостей за неделю: <span class="general-data-analytics__mark">34 324</span></p>
+            <p class="general-data-analytics__statistics">Упоминаний в загаловках: <span class="general-data-analytics__mark">235</span></p>
           </div>
       </section>
-      <section class="technologies">
-          <div class="content-margin-l-r technologies__container">
-            <h2 class="technologies__title">Используемые технологии</h2>
-            <ul class="technologies__list-of-tech">
-              <li class="technologies__item-tech">
-                <p class="technologies__item-header">HTML</p>
-                <img class="technologies__item-img" src="<%=require('../images/html.svg')%>" alt="">
-              </li>
-              <li class="technologies__item-tech">
-                <p class="technologies__item-header">CSS</p>
-                <img class="technologies__item-img" src="<%=require('../images/css.svg')%>" alt="">
-              </li>
-              <li class="technologies__item-tech">
-                <p class="technologies__item-header">Java Script</p>
-                <img class="technologies__item-img" src="<%=require('../images/js.svg')%>" alt="">
-              </li>
-              <li class="technologies__item-tech">
-                <p class="technologies__item-header">Webpack</p>
-                <img class="technologies__item-img" src="<%=require('../images/webpack.svg')%>" alt="">
-              </li>
-            </ul>
+      <section class="detail-analytics">
+          <div class="content-margin-l-r">
+            <h2 class="detail-analytics__title">Аналитика по дням</h2>
+            <div class="diagram">
+              <div class="diagram__top">
+                <p class="diagram__date diagram__left-column">Дата (Авгутс)</p>
+                <p class="diagram__amount diagram__right-column">Кол-во упоминаний</p>
+              </div>
+              <div class="diagram__scale">
+                <div class="diagram__empty-block diagram__left-column"></div>
+                <div class="diagram__numbers diagram__right-column">
+                  <p class="diagram__number">0</p>
+                  <p class="diagram__number">25</p>
+                  <p class="diagram__number">50</p>
+                  <p class="diagram__number">75</p>
+                  <p class="diagram__number">100</p>
+                </div>
+              </div>
+              <div class="diagram__row">
+                <p class="diagram__day diagram__left-column">19, пн</p>
+                <div class="diagram__line diagram__right-column">15</div>
+              </div>
+              <div class="diagram__row">
+                <p class="diagram__day diagram__left-column">20, вт</p>
+                <div class="diagram__line diagram__right-column">18</div>
+              </div>
+              <div class="diagram__row">
+                <p class="diagram__day diagram__left-column">21, ср</p>
+                <div class="diagram__line diagram__right-column">11</div>
+              </div>
+              <div class="diagram__row">
+                <p class="diagram__day diagram__left-column">22, чт</p>
+                <div class="diagram__line diagram__right-column">39</div>
+              </div>
+              <div class="diagram__row">
+                <p class="diagram__day diagram__left-column">23, пт</p>
+                <div class="diagram__line diagram__right-column">45</div>
+              </div>
+              <div class="diagram__row">
+                <p class="diagram__day diagram__left-column">24, сб</p>
+                <div class="diagram__line diagram__right-column">73</div>
+              </div>
+              <div class="diagram__row">
+                <p class="diagram__day diagram__left-column">25, вс</p>
+                <div class="diagram__line diagram__right-column">34</div>
+              </div>
+              <div class="diagram__scale">
+                  <div class="diagram__empty-block diagram__left-column"></div>
+                  <div class="diagram__numbers diagram__right-column">
+                    <p class="diagram__number">0</p>
+                    <p class="diagram__number">25</p>
+                    <p class="diagram__number">50</p>
+                    <p class="diagram__number">75</p>
+                    <p class="diagram__number">100</p>
+                  </div>
+              </div>
+            </div>
           </div>
       </section>
       <section class="about-author">
