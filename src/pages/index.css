@@ -28,13 +28,15 @@
 @import url(../blocks/main/main.css);
 @import url(../blocks/footer/footer.css);
 /* index1 */
-@import url(../blocks/about-project/about-project.css);
+/* @import url(../blocks/about-project/about-project.css); */
 
-/* index2 */
 .root{
-    width: 1440px;
+    width: 100%;
     margin:0 auto;
     background: #FFFFFF;
     font-size: 10px;
     font-family: Roboto, sans-serif;
+}
+a:hover{
+    cursor: pointer;
 }

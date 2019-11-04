@@ -6,10 +6,14 @@
     padding-top: 24px;
     width: calc(400*100%/1440);
     box-sizing: border-box;
+    margin-right: 16px;
 }
 .card__container{
     display: flex;
 
+}
+.card__link{
+    text-decoration: none;
 }
 .card__date{
     font-size: 140%;
@@ -24,6 +28,7 @@
     font-size: 260%;
     line-height: calc(30/26);
     margin: 4px 0 2px;
+    color: #1A1B22;
 }
 .card__email{
     font-size: 140%;
@@ -44,6 +49,7 @@
     color: #1A1B22;
     margin: 16px 0 0;
 }
+
 @media screen and (max-width: 768px) and (min-width: 321px){
     .card{
         padding-left: calc(24*100%/768);

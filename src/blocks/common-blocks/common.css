@@ -3,7 +3,6 @@
     width: calc(1232*100%/1440);
 }
 .button{
-    background: #2F71E5;
     box-sizing: border-box;
     position: absolute;
     border-radius: calc(100px);
@@ -20,10 +19,25 @@
     border: none;
     width: calc(168*100%/608);
 }
+.button_blue{
+    background: #2F71E5;
+}
+.button:hover{
+    cursor: pointer;
+}
+.button_blue:hover{
+    cursor: pointer;
+    background: #347EFF;
+}
 @media screen and (max-width: 768px) and (min-width: 321px){
     .content-margin-l-r{
         margin: 0 auto;
         width: calc(688*100%/768);
+    }
+    .button{
+        position: absolute;
+        min-height: 56px;
+        width: calc(160*100%/448);
     }
 }
 
@@ -31,5 +45,10 @@
     .content-margin-l-r{
         margin: 0 auto;
         width: calc(288*100%/320);
+    }
+    .button{
+        position: relative;
+        min-height: 56px;
+        width: 100%;
     }
 }

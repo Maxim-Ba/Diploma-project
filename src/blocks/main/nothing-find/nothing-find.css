@@ -31,3 +31,14 @@
     margin:  0 auto;
     width: calc(256*100%/1440);
 }
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .nothing-find__subtitle{
+        width: calc(688*100%/768);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .nothing-find__subtitle{
+        width: calc(288*100%/388);
+    }
+}

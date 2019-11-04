@@ -106,7 +106,7 @@
 .diagram__right-column{
     width: calc(1128*100%/1232);
 }
-@media screen and (max-width: 768px) and (min-width: 321px){
+@media screen and (max-width: 768px) and (min-width: 421px){
     .diagram__top{
         padding-bottom: 23px;
     }
@@ -118,7 +118,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     .diagram__top{
         padding-bottom: 20px;
         margin-bottom: 18px;

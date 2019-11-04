@@ -1,7 +1,10 @@
 .article{
-    margin: 0 8px 16px;
+    margin: 0 calc(8*100%/1248) 16px;
     background: #FFFFFF;
     width: calc(400*100%/1248);
+    border-top-left-radius: 7px 4px;
+    border-top-right-radius: 7px 4px;
+    overflow: hidden;
 }
 .article__link{
     display: block;
@@ -11,6 +14,7 @@
 }
 .article__img{
     margin-bottom: 20px;
+    width: 100%;
 }
 .article__container-margin-auto{
     margin: 0 auto;
@@ -47,4 +51,35 @@
     color: #B6BCBF;
     font-style: normal;
     font-weight: bold;
+}
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .article__img{
+        margin-bottom: 16px;
+    }
+    .article__date{
+        font-size: 180%;
+        line-height: calc(24/18);
+        margin-bottom: 12px;
+    }
+    .article__title{
+        margin-bottom: 10px;
+        font-size: 220%;
+        line-height: calc(24/22);
+    }
+    .article__discription{
+        margin-bottom: 12px;
+        font-size: 160%;
+        line-height: calc(22/16);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .article__img{
+        margin-bottom: 16px;
+    }
+    .article{
+        margin: 0 0 16px;
+        background: #FFFFFF;
+        width: 100%;
+    }
 }
