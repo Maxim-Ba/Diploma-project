@@ -14,3 +14,31 @@
     line-height: calc(24/18);
     width: calc(815*100%/1232);
 }
+
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .for-clients{
+        padding: 30px 0 26px;
+    }
+    .for-clients__title{
+        font-size: 300%;
+        line-height: calc(34/30);
+        margin-bottom: 16px;
+    }
+    .for-clients__information{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .for-clients{
+        padding: 16.46px 0 16px;
+    }
+    .for-clients__title{
+        font-size: 300%;
+        line-height: calc(40/30);
+        margin-bottom: 16.46px;
+    }
+    .for-clients__information{
+        width: 100%;
+    }
+}
