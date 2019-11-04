@@ -26,3 +26,56 @@
 .git__slider{
 
 }
+.git__buttom-mobile{
+    display: none;
+}
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .git{
+        padding: 40px 0 40px;
+    }
+    .git__title{
+        font-size: 400%;
+        line-height: calc(46/40);
+        margin: 0 0 32px;
+        display: block;
+        width: calc(336*100%/688);
+    }
+    .git__button-mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .git{
+        padding: 32px 0 32px;
+    }
+    .git__title{
+        font-size: 300%;
+        line-height: calc(40/30);
+        margin: 0 0 18px;
+        display: block;
+        width: 100%;
+        padding-right: 20%;
+    }
+    .git__button-mobile{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border: 1px solid #1A1B22;
+        box-sizing: border-box;
+        border-radius: 80px;
+        width: calc(288*100%/320);
+        margin: 0 auto;
+        margin-top: 24px;
+        font-weight: 500;
+        font-size: 180%;
+        line-height: calc(24/18);
+        text-decoration: none;
+        color: #1A1B22;
+        height: 56px;
+    }
+    .git__open{
+        display: none;
+    }
+}
