@@ -106,3 +106,36 @@
 .diagram__right-column{
     width: calc(1128*100%/1232);
 }
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .diagram__top{
+        padding-bottom: 23px;
+    }
+    .diagram__left-column{
+        width: calc(104*100%/688);
+    }
+    .diagram__right-column{
+        margin-left: calc(13*100%/688);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .diagram__top{
+        padding-bottom: 20px;
+        margin-bottom: 18px;
+    }
+    .diagram__left-column{
+        width: calc(64*100%/288);
+    }
+    .diagram__right-column{
+        margin-left: 16px;
+    }
+    .diagram__scale{
+        display: none;
+    }
+    .diagram__row{
+        margin-bottom: 24px;
+    }
+    .diagram__row_margin-b-0{
+        margin-bottom: 0;
+    }
+}
