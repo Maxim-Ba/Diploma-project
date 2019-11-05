@@ -7,13 +7,17 @@
     width: calc(400*100%/1440);
     box-sizing: border-box;
     margin-right: 16px;
+    z-index: 1;
 }
 .card__container{
     display: flex;
-
 }
 .card__link{
     text-decoration: none;
+}
+.card__link:hover{
+    text-decoration: none;
+    cursor: pointer;
 }
 .card__date{
     font-size: 140%;

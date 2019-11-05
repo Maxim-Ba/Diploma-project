@@ -1,0 +1,61 @@
+.flickity-page-dots {
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+  /* white circles */
+.flickity-page-dots .dot {
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+    background: transparent;
+    border-radius: 50%;
+    background: #D1D2D6;
+    margin-right: 8px;
+}
+  /* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+    background: #1A1B22;
+}
+.flickity-button {
+    background: #1A1B22;
+
+}
+
+
+.flickity-prev-next-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    box-shadow: none;
+    border: none;
+}
+  /* icon color */
+.flickity-button-icon {
+    fill: white;
+    width: 8px;
+    height: 13px;
+}
+  /* position outside */
+.flickity-prev-next-button.previous {
+    left: 24px;
+    z-index: 2;
+}
+.flickity-prev-next-button.next {
+    right: 24px;
+    z-index: 2;
+}
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .flickity-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .flickity-button {
+        display: none;
+    }
+}

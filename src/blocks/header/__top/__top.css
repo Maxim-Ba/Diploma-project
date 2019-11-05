@@ -32,7 +32,7 @@
     padding-bottom: 23px;
 }
 .header__link_active{
-    color: #fff;
+    color: #ffffff;
     border-bottom: #ffffff 3px solid;
 }
 @media screen and (max-width: 768px) and (min-width: 349px){
@@ -54,6 +54,10 @@
     }
     .header__links a:first-child{
         margin-left: 0;
+    }
+    .header__link_active{
+        color: #ffffff;
+        border-bottom: #ffffff 3px solid;
     }
 }
 @media screen and (max-width: 348px) and (min-width: 321px){
@@ -77,5 +81,9 @@
         color: #B6BCBF;
         margin-left: 11px;
         padding-bottom: 13px;
+    }
+    .header__link_active{
+        color: #ffffff;
+        border-bottom: #ffffff 3px solid;
     }
 }
