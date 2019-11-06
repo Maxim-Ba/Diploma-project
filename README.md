@@ -10,7 +10,7 @@ Balashov Maxim
 -подсчитывает статистику: сколько новостей вышло в каждый из последних семи дней. Статистику нужно отрисовать на отдельной странице.
 
 
-### INSTALLATION(download)
+## INSTALLATION(download)
 
 For download the project use command: 
 `git clone https://github.com/Maxim-Ba/Diploma-project.git`

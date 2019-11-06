@@ -19,7 +19,6 @@
     display: flex;
     justify-content: space-between;
     min-width: 404px;
-    /* margin-right: calc(-40*100%/404); */
 }
 .footer__nav-link{
     display: block;
@@ -28,7 +27,6 @@
     text-align: center;
     color: #1A1B22;
     text-decoration: none;
-    /* margin-right: calc(40*100%/404); */
 }
 .footer__social-links{
     margin-left: -28px;
