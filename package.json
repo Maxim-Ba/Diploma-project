@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/Maxim-Ba/Diploma-project/issues"
   },
-  "homepage": "https://github.com/Maxim-Ba/Diploma-project#readme",
+  "homepage": "https://maxim-ba.github.io/Diploma-project/",
   "devDependencies": {
     "@babel/cli": "7.6.4",
     "@babel/core": "7.6.4",

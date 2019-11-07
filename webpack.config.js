@@ -33,7 +33,7 @@ module.exports = {
             index2: './src/script/index2.js'        
     },
     output: {
-        path: path.resolve(__dirname, 'dist/index/'),
+        path: path.resolve(__dirname, 'dist/'),
         filename: '[name].[chunkhash].js'
     },
     
@@ -51,12 +51,14 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: [
-                    
-                    (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+                    {
+                        loader: (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+                            
+                        
+                    },
                     
                     'css-loader', 
                     'postcss-loader',
-                    
                 ]
             },
             {
@@ -88,7 +90,11 @@ module.exports = {
             'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
         }),
         new MiniCssExtractPlugin({
-                filename: './style/[name].[contenthash].css'
+                filename: './style/[name].[contenthash].css',
+                options: {
+                                
+                    publicPath: '../',
+            },
                 
         }),
         new OptimizeCssAssetsPlugin({
