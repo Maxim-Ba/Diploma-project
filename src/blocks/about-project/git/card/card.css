@@ -53,7 +53,9 @@
     color: #1A1B22;
     margin: 16px 0 0;
 }
-
+.card__title{
+    display: none;
+}
 @media screen and (max-width: 768px) and (min-width: 321px){
     .card{
         padding-left: calc(24*100%/768);

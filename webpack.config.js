@@ -51,12 +51,8 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: [
-                    {
-                        loader: (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-                            
-                        
-                    },
                     
+                    (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
                     'css-loader', 
                     'postcss-loader',
                 ]
@@ -92,10 +88,8 @@ module.exports = {
         new MiniCssExtractPlugin({
                 filename: './style/[name].[contenthash].css',
                 options: {
-                                
                     publicPath: '../',
             },
-                
         }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,

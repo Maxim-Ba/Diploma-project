@@ -26,7 +26,7 @@
 }
 .git__slider{
     overflow: hidden;
-     max-width:100%; /*calc(123200%/1440); */
+    max-width:100%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -39,6 +39,7 @@
 .git__button-mobile{
     display: none;
 }
+
 @media screen and (max-width: 768px) and (min-width: 321px){
     .git{
         padding: 40px 0 40px;

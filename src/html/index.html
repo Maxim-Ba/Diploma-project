@@ -25,7 +25,7 @@
       <section class="header__bottom">
         <h1 class="header__title">Что в мире творится?</h1>
         <p class="header__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</p>
-        <form class="header__form" action="">
+        <form class="header__form" action="./index.html">
           <input class="input" type="text" placeholder="Введите тему новости">
           <button class="button button_blue">Искать</button>
         </form>
@@ -53,7 +53,7 @@
                 <img class="article__img" src="<%=require('../images/article-img.jpg')%>" alt="image of this article" >
                 <div class="article__container-margin-auto">
                     <p class="article__date">2 августа, 2019</p>
-                    <h3 class="article__title">Национальное достояние – парки</h3>
+                    <h4 class="article__title">Национальное достояние – парки</h4>
                     <p class="article__discription">
                       В 2016 году Америка отмечала важный юбилей: 
                       сто лет назад здесь начала складываться система национальных парков – 
@@ -69,7 +69,7 @@
                   <img class="article__img" src="<%=require('../images/article-img.jpg')%>" alt="image of this article" >
                   <div class="article__container-margin-auto">
                       <p class="article__date">2 августа, 2019</p>
-                      <h3 class="article__title">Национальное достояние – парки</h3>
+                      <h4 class="article__title">Национальное достояние – парки</h4>
                       <p class="article__discription">
                         В 2016 году Америка отмечала важный юбилей: 
                         сто лет назад здесь начала складываться система национальных парков – 
@@ -84,7 +84,7 @@
                     <img class="article__img" src="<%=require('../images/article-img.jpg')%>" alt="image of this article" >
                     <div class="article__container-margin-auto">
                         <p class="article__date">2 августа, 2019</p>
-                        <h3 class="article__title">Национальное достояние – парки</h3>
+                        <h4 class="article__title">Национальное достояние – парки</h4>
                         <p class="article__discription">
                           В 2016 году Америка отмечала важный юбилей: 
                           сто лет назад здесь начала складываться система национальных парков – 
@@ -99,7 +99,7 @@
                       <img class="article__img" src="<%=require('../images/article-img.jpg')%>" alt="image of this article" >
                       <div class="article__container-margin-auto">
                           <p class="article__date">2 августа, 2019</p>
-                          <h3 class="article__title">Национальное достояние – парки</h3>
+                          <h4 class="article__title">Национальное достояние – парки</h4>
                           <p class="article__discription">
                             В 2016 году Америка отмечала важный юбилей: 
                             сто лет назад здесь начала складываться система национальных парков – 
@@ -147,6 +147,7 @@
       </footer>
     </main>
   </div>
+  <script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
-<script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
 </html>

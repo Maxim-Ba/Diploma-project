@@ -93,6 +93,7 @@
         </header>
         <div class="git__slider" data-flickity='{ "wrapAround": true, "percentPosition": false }'>
           <article class="card carousel-cell">
+            <h2 class="card__title">Title</h2>
             <a href="#" class="card__link"  target="_blank">
               <p class="card__date">14 августа, 2019</p>
               <div class="card__container">
@@ -109,6 +110,7 @@
             </a>
           </article>
           <article class="card carousel-cell">
+            <h2 class="card__title">Title</h2>
             <a href="#" class="card__link" target="_blank">
               <p class="card__date">14 августа, 2019</p>
               <div class="card__container">
@@ -125,6 +127,7 @@
             </a>
           </article>
           <article class="card carousel-cell">
+            <h2 class="card__title">Title</h2>
             <a href="#" class="card__link" target="_blank">
               <p class="card__date">14 августа, 2019</p>
               <div class="card__container">
@@ -142,6 +145,7 @@
             </a>
           </article>
           <article class="card carousel-cell">
+            <h2 class="card__title">Title</h2>
             <a href="#" class="card__link" target="_blank">
               <p class="card__date">14 августа, 2019</p>
               <div class="card__container">
@@ -168,23 +172,23 @@
         <nav class="footer__nav">
           <a href="./index.html" class="footer__nav-link">Главная</a>
           <a href="./index1.html" class="footer__nav-link">О проекте</a>
-          <a href="https://praktikum.yandex.ru/" class="footer__nav-link">Яндекс.Практикум</a>
+          <a href="https://praktikum.yandex.ru/" class="footer__nav-link" target="_blank">Яндекс.Практикум</a>
         </nav>
         <nav class="footer__social-links">
           <a href="https://github.com/Maxim-Ba/Diploma-project" class="footer__social-link" target="_blank">
             <img class="foter__icon"
-              src="<%=require('../images/gh-icon.svg')%>" alt="github icon" target="_blank">
+              src="<%=require('../images/gh-icon.svg')%>" alt="github icon">
           </a>
-          <a href="#" class="footer__social-link">
+          <a href="#" class="footer__social-link" target="_blank">
             <img class="foter__icon"
-              src="<%=require('../images/facebook-icon.svg')%>" alt="facebook icon" target="_blank">
+              src="<%=require('../images/facebook-icon.svg')%>" alt="facebook icon">
           </a>
         </nav>
       </div>
     </footer>
-
   </div>
+  <script type="module" src="<%= htmlWebpackPlugin.files.chunks.index1.entry %>"></script>
 </body>
-<script type="module" src="<%= htmlWebpackPlugin.files.chunks.index1.entry %>"></script>
+
 
 </html>
