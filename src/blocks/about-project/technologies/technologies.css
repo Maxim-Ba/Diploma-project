@@ -47,12 +47,12 @@
 .technologies__item-img{
     
 }
-@media screen and (max-width: 1095px) and (min-width: 769px){
+@media screen and (max-width: 1095px) and (min-width: 821px){
     .technologies__item-header{
         height: 49px;
     }
 }
-@media screen and (max-width: 768px) and (min-width: 321px){
+@media screen and (max-width: 820px) and (min-width: 321px){
     .technologies{
         padding: 40px 0 49px;
     }

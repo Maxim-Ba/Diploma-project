@@ -40,10 +40,11 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) and (min-width: 321px){
+@media screen and (max-width: 768px) and (min-width: 364px){
     .git{
         padding: 40px 0 40px;
     }
+    
     .git__title{
         font-size: 400%;
         line-height: calc(46/40);
@@ -55,8 +56,15 @@
         display: none;
     }
 }
-
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) and (min-width: 364px){
+    .git__title{
+        font-size: 280%;
+        line-height: calc(40/28);
+        margin: 0 0 32px;
+        display: block;
+    }
+}
+@media screen and (max-width: 364px) {
     .git{
         padding: 32px 0 32px;
     }

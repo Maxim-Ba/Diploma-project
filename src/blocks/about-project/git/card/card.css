@@ -8,6 +8,7 @@
     box-sizing: border-box;
     margin-right: 16px;
     z-index: 1;
+    min-width: 240px;
 }
 .card__container{
     display: flex;
