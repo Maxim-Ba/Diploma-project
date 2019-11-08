@@ -80,7 +80,7 @@
 @media screen and (max-width: 768px) and (min-width: 358px){
     .article{
         min-width: 180px;
-        max-width: 300px;
+        max-width: 224px;
     }
 
 }
