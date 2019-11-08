@@ -6,6 +6,7 @@ const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 const fs = require('fs');
+const publicPath = './';
 
 function generateHtmlPlugins(templateDir) {
     const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
@@ -34,7 +35,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist/'),
-        filename: '[name].[chunkhash].js'
+        filename: '[name].[chunkhash].js',
+        publicPath: publicPath,
     },
     
 // 
@@ -52,11 +54,10 @@ module.exports = {
                 test: /\.css$/i,
                 use: [
                     
-                    {loader:(isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-                    
-                    },
-                    {loader:'css-loader'}, 
-                    {loader:'postcss-loader'},
+                    (isDev ? 'style-loader' : {loader:MiniCssExtractPlugin.loader, options:{publicPath: '../'}})
+                    ,
+                    'css-loader', 
+                    'postcss-loader',
                 ]
             },
             {
@@ -89,9 +90,9 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
                 filename: './style/[name].[contenthash].css',
-                options: {
-                    publicPath: '../',
-            },
+                
+                    
+            
         }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,
