@@ -29,17 +29,14 @@
     font-weight : normal;
 }
 @import url(../vendor/normalize.css);
-@import url(../blocks/common-blocks/common.css);
+@import url(../blocks/common/common.css);
 @import url(../blocks/header/header.css);
+@import url(../blocks/main/main.css);
 @import url(../blocks/footer/footer.css);
-@import url(../blocks/about-author/about-author.css);
-/* index1 */
-@import url(../blocks/header/_no-background.css);
-@import url(../blocks/about-project/about-project.css);
 
 .root{
-    max-width: 1440px;
     width: 100%;
+    max-width: 1440px;
     margin:0 auto;
     background: #FFFFFF;
     font-size: 10px;

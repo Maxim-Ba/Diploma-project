@@ -7,7 +7,7 @@
   <meta name="author" content="Balashov Maxim">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer by Balashov Maxim</title>
-  <link type="text/css" rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.index2.css %>">
+  <link type="text/css" rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.analytics.css %>">
   <link rel="icon" href="<%=require('../images/favicon/A-blue.ico')%>">
 </head>
 <body>
@@ -18,7 +18,7 @@
           <h2 class="header__logo header__logo_color-black">NewsAnalyzer</h2>
           <nav class="header__links">
             <a href="./index.html" class="header__link">Главная</a>
-            <a href="./index1.html" class="header__link">О проекте</a>
+            <a href="./about.html" class="header__link">О проекте</a>
           </nav>
         </div>
       </section>
@@ -98,7 +98,7 @@
           <p class="footer__author">&#169; 2019 Supersite</p>
           <nav class="footer__nav">
             <a href="./index.html" class="footer__nav-link">Главная</a>
-            <a href="./index1.html" class="footer__nav-link">О проекте</a>
+            <a href="./about.html" class="footer__nav-link">О проекте</a>
             <a href="https://praktikum.yandex.ru/" class="footer__nav-link">Яндекс.Практикум</a>
           </nav>
           <nav class="footer__social-links">
@@ -114,6 +114,6 @@
         </div>
       </footer>
   </div>
-  <script type="module" src="<%= htmlWebpackPlugin.files.chunks.index2.entry %>"></script>
+  <script type="module" src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
 </body>
 </html>

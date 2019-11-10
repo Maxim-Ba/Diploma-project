@@ -15,7 +15,6 @@
     margin: 0 auto;
     display: block;
     margin-bottom: 32px;
-    /* width: calc(608*100%/1440); */
     min-height: 128px;
 }
 .header__subtitle{
@@ -23,7 +22,6 @@
     display: block;
     margin-bottom: 64px;
     min-height: 48px;
-    /* width: calc(545*100%/1440); */
     font-size: 180%;
     line-height: calc(24/18);
 }

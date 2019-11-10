@@ -29,9 +29,10 @@ function generateHtmlPlugins(templateDir) {
 const htmlPlugins = generateHtmlPlugins('./src/html')
 
 module.exports = {
-    entry: { main: './src/script/index.js',  
-            index1: './src/script/index1.js',
-            index2: './src/script/index2.js'        
+    entry: {
+        index: './src/script/main.js',  
+        about: './src/script/about.js',
+        analytics: './src/script/analytics.js'        
     },
     output: {
         path: path.resolve(__dirname, 'dist/'),

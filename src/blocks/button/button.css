@@ -1,7 +1,3 @@
-.content-margin-l-r{
-    margin: 0 auto;
-    width: calc(1232*100%/1440);
-}
 .button{
     box-sizing: border-box;
     position: absolute;
@@ -34,10 +30,7 @@
     background: #2A65CC;;
 }
 @media screen and (max-width: 768px) and (min-width: 321px){
-    .content-margin-l-r{
-        margin: 0 auto;
-        width: calc(688*100%/768);
-    }
+    
     .button{
         position: absolute;
         min-height: 56px;
@@ -46,10 +39,7 @@
 }
 
 @media screen and (max-width: 320px) {
-    .content-margin-l-r{
-        margin: 0 auto;
-        width: calc(288*100%/320);
-    }
+    
     .button{
         position: relative;
         min-height: 56px;

@@ -1,5 +1,5 @@
-@import url(./__top/__top.css);
-@import url(./__bottom/__bottom.css);
+@import url(./__top/header__top.css);
+@import url(./__bottom/header__bottom.css);
 .header{
     background-image: url(../../images/header-backgrouund.jpg);
     color: #ffffff;

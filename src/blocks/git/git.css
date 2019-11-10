@@ -1,5 +1,5 @@
-@import url(./card/card.css);
-@import url(../../flickity/flickity.css);
+@import url(../card/card.css);
+@import url(../flickity/flickity.css);
 .git{
     background: #F5F6F7;
     padding: 72px 0 80px;

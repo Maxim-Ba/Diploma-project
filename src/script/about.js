@@ -1,2 +1,2 @@
-import '../pages/index1.css';
+import '../pages/about.css';
 import slider from './modules/slider';
