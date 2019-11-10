@@ -119,7 +119,10 @@
       </section>
       <section class="about-author">
           <div class="content-margin-l-r about-author__container">
-            <img class="about-author__photo" src="<%=require('../images/author-photo.jpg')%>" alt="author`s photo">
+              <picture class="about-author__picture">
+                  <source srcset="<%=require('../images/author-photo.jpg')%>" media="(min-width:769px)">
+                  <img class="about-author__photo" src="<%=require('../images/author-photo_low.jpg')%>" alt="author`s photo">
+              </picture>
             <div class="about-author__discription">
               <h2 class="about-author__title">Об авторе</h2>
               <p class="about-author__comment">
