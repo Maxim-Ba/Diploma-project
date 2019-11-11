@@ -7,7 +7,7 @@
   <meta name="author" content="Balashov Maxim">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer by Balashov Maxim</title>
-  <link type="text/css" rel="stylesheet" href="./style/index.77aae05fd381a08c6d3a.css?dfca68ef9300a58e2c56">
+  <link type="text/css" rel="stylesheet" href="./style/index.ea46c71e2b029de23c27.css?c77ba117cc60d4eaf620">
   <link rel="icon" href="./images/A-blue.ico">
 </head>
 <body>
@@ -119,15 +119,20 @@
       </section>
       <section class="about-author">
           <div class="content-margin-l-r about-author__container">
-            <img class="about-author__photo" src="./images/author-photo.jpg" alt="author`s photo">
+              <picture class="about-author__picture">
+                  <source srcset="./images/author-photo.jpg" media="(min-width:769px)">
+                  <img class="about-author__photo" src="./images/author-photo_low.jpg" alt="author`s photo">
+              </picture>
             <div class="about-author__discription">
               <h2 class="about-author__title">Об авторе</h2>
-              <p class="about-author__comment">
-                  Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, 
-                  какими технологиями разработки владете. <br>
-                  <br>Также можно рассказать о процессе обучения в Практикуме, 
+              <div class="about-author__comment">
+                  <p class="about-author__paragraph">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, 
+                  какими технологиями разработки владете.
+                  </p>
+                  <p class="about-author__paragraph">Также можно рассказать о процессе обучения в Практикуме, 
                   чему вы тут научились, и чем можете помочь потенциальным заказчикам.
-              </p>
+                  </p>
+              </div>
             </div>
           </div>
       </section>
@@ -151,7 +156,7 @@
       </footer>
     </main>
   </div>
-  <script type="module" src="index.e6086cad49eba8963634.js?dfca68ef9300a58e2c56"></script>
+  <script type="module" src="index.e6086cad49eba8963634.js?c77ba117cc60d4eaf620"></script>
 </body>
 
 </html>
