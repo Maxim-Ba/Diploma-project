@@ -1,0 +1,16 @@
+.general-data-analytics__title{
+    font-size: 180%;
+    line-height: calc(24/18);
+    color: #1A1B22;
+    margin: 0 0 80px;
+}
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .general-data-analytics__title{
+        margin: 0 0 64px;
+    }
+}
+@media screen and (max-width: 320px){
+    .general-data-analytics__title{
+        display: none;
+    }
+}

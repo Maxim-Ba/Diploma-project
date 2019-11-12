@@ -1,0 +1,28 @@
+.technologies__list-of-tech{
+    display: flex;
+    padding: 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    min-width: calc(600*100%/1232);
+    margin: 0;
+}
+@media screen and (max-width: 820px) and (min-width: 371px){
+    .technologies__list-of-tech{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 370px) and (min-width: 321px){
+    .technologies__list-of-tech{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 320px) {
+    .technologies__list-of-tech{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

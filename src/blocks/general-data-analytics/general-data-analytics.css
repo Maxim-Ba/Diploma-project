@@ -1,59 +1,22 @@
+@import url(./__title/general-data-analytics__title.css);
+@import url(./__statistics/general-data-analytics__statistics.css);
+@import url(./__query/general-data-analytics__query.css);
+@import url(./__mark/general-data-analytics__mark.css);
+@import url(./__mark-grey/general-data-analytics__mark-grey.css);
+
 .general-data-analytics{
     background: #FFFFFF;
     padding: 40px 0 76px;
-}
-.general-data-analytics__title{
-    font-size: 180%;
-    line-height: calc(24/18);
-    color: #1A1B22;
-    margin: 0 0 80px;
-}
-.general-data-analytics__mark-grey{
-    color: #B6BCBF;
-}
-.general-data-analytics__query{
-    font-family: Roboto-Slab, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 400%;
-    line-height: calc(46/40);
-    margin: 0 0 24px;
-    color: #1A1B22;
-}
-.general-data-analytics__statistics{
-    font-size: 180%;
-    line-height: calc(24/18);
-    color: #1A1B22;
-    margin: 0 0 4px;
-}
-.general-data-analytics__mark{
-    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) and (min-width: 321px){
     .general-data-analytics{
         padding: 32px 0 40px;
     }
-    .general-data-analytics__title{
-        margin: 0 0 64px;
-    }
-    .general-data-analytics__query{
-        font-size: 320%;
-        line-height: calc(34/32);
-        margin: 0 0 24px;
-    }
 }
 
 @media screen and (max-width: 320px){
-    .general-data-analytics__title{
-        display: none;
-    }
     .general-data-analytics{
         padding: 16px 0 24px;
-    }
-    .general-data-analytics__query{
-        font-size: 300%;
-        line-height: calc(34/30);
-        margin: 0 0 16px;
     }
 }

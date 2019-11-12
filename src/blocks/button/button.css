@@ -1,3 +1,6 @@
+@import url(./_blue/button_blue.css);
+
+
 .button{
     box-sizing: border-box;
     position: absolute;
@@ -15,9 +18,7 @@
     border: none;
     width: calc(168*100%/608);
 }
-.button_blue{
-    background: #2F71E5;
-}
+
 .button:hover{
     cursor: pointer;
 }
@@ -25,12 +26,8 @@
     cursor: pointer;
     background: #347EFF;
 }
-.button_blue:active{
-    cursor: pointer;
-    background: #2A65CC;;
-}
+
 @media screen and (max-width: 768px) and (min-width: 321px){
-    
     .button{
         position: absolute;
         min-height: 56px;
@@ -39,7 +36,6 @@
 }
 
 @media screen and (max-width: 320px) {
-    
     .button{
         position: relative;
         min-height: 56px;

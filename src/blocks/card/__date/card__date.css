@@ -1,0 +1,6 @@
+.card__date{
+    font-size: 140%;
+    line-height: calc(22/14);
+    color: #B6BCBF;
+    margin: 0 0 16px;
+}

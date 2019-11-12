@@ -1,0 +1,13 @@
+.diagram__line{
+    font-weight: bold;
+    font-size: 120%;
+    line-height: calc(16/12);
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    overflow: hidden;
+}

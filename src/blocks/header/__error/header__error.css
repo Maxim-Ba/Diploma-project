@@ -1,0 +1,21 @@
+.header__error{
+    display: none;
+    color: rgb(121, 54, 54);
+    min-width: 90%;
+    box-sizing: border-box;
+    font-size: 160%;
+    line-height: calc(22/16);
+    margin: 16px auto 0;
+    text-align: center;
+    position: absolute;
+}
+@media screen and (max-width: 320px) {
+    .header__error{
+        min-width: 100%;
+        font-size: 140%;
+        line-height: calc(22/14);
+        margin: 0 auto 0;
+        position: absolute;
+        bottom: -25px;
+    }
+}

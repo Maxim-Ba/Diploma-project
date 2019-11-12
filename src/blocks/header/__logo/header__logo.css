@@ -1,0 +1,16 @@
+.header__logo{
+    margin: 0;
+    font-family: Roboto-Slab, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(20*100%/10);
+    line-height: calc(24/20);
+    display: block;
+}
+@media screen and (max-width: 390px){
+    .header__logo{
+        font-size: 16px;
+        line-height: calc(24/16);
+        margin-right: calc(25*100%/288);
+    }
+}

@@ -1,0 +1,9 @@
+.technologies__item-header{
+    margin: 0 0 23px;
+    display: block;
+}
+@media screen and (max-width: 1095px) and (min-width: 821px){
+    .technologies__item-header{
+        height: 49px;
+    }
+}

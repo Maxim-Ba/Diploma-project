@@ -1,0 +1,7 @@
+.button_blue{
+    background: #2F71E5;
+}
+.button_blue:active{
+    cursor: pointer;
+    background: #2A65CC;;
+}

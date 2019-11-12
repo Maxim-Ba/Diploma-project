@@ -1,0 +1,9 @@
+.diagram__row_margin-b-0{
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 420px) {
+    .diagram__row_margin-b-0{
+        margin-bottom: 0;
+    }
+}

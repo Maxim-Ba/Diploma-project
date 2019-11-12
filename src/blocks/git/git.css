@@ -1,100 +1,24 @@
 @import url(../card/card.css);
-@import url(../flickity/flickity.css);
+@import url(../../vendor/flickity/flickity.css);
+@import url(../git/__head/git__head.css);
+@import url(../git/__title/git__title.css);
+@import url(../git/__open/git__open.css);
+@import url(../git/__slider/git__slider.css);
+@import url(../git/__button_mobile.css/git__button_mobile.css);
+
 .git{
     background: #F5F6F7;
     padding: 72px 0 80px;
-}
-.git__head{
-    display: flex;
-    justify-content: space-between;
-}
-.git__title{
-    font-family: Roboto-Slab;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 400%;
-    line-height: calc(46/40);
-    color: #1A1B22;
-    margin: 0 0 64px;
-}
-.git__open{
-    font-weight: 500;
-    font-size: 180%;
-    line-height: calc(24/18);
-    text-decoration: none;
-    color: #1A1B22;
-}
-.git__slider{
-    overflow: hidden;
-    max-width:100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-
-    background:linear-gradient(180deg, rgba(187, 191, 196, 0) 0%, #F5F6F7 100%);
-}
-.git__slider:focus{
-    outline: none;
-}
-.git__button-mobile{
-    display: none;
 }
 
 @media screen and (max-width: 768px) and (min-width: 364px){
     .git{
         padding: 40px 0 40px;
     }
-    
-    .git__title{
-        font-size: 400%;
-        line-height: calc(46/40);
-        margin: 0 0 32px;
-        display: block;
-        width: calc(336*100%/688);
-    }
-    .git__button-mobile{
-        display: none;
-    }
 }
-@media screen and (max-width: 420px) and (min-width: 364px){
-    .git__title{
-        font-size: 280%;
-        line-height: calc(40/28);
-        margin: 0 0 32px;
-        display: block;
-    }
-}
+
 @media screen and (max-width: 364px) {
     .git{
         padding: 32px 0 32px;
-    }
-    .git__title{
-        font-size: 300%;
-        line-height: calc(40/30);
-        margin: 0 0 18px;
-        display: block;
-        width: 100%;
-        padding-right: 20%;
-    }
-    .git__button-mobile{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        border: 1px solid #1A1B22;
-        box-sizing: border-box;
-        border-radius: 80px;
-        width: calc(288*100%/320);
-        margin: 0 auto;
-        margin-top: 24px;
-        font-weight: 500;
-        font-size: 180%;
-        line-height: calc(24/18);
-        text-decoration: none;
-        color: #1A1B22;
-        height: 56px;
-    }
-    .git__open{
-        display: none;
     }
 }

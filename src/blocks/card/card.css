@@ -1,3 +1,12 @@
+@import url(./__author/card__author.css);
+@import url(./__comment/card__comment.css);
+@import url(./__container/card__container.css);
+@import url(./__date/card__date.css);
+@import url(./__email/card__email.css);
+@import url(./__img/card__img.css);
+@import url(./__link/card__link.css);
+@import url(./__title/card__title.css);
+@import url(./__mark/card__mark.css);
 .card{
     background: #FFFFFF;
     border-radius: 16px;
@@ -10,53 +19,7 @@
     z-index: 1;
     min-width: 240px;
 }
-.card__container{
-    display: flex;
-}
-.card__link{
-    text-decoration: none;
-}
-.card__link:hover{
-    text-decoration: none;
-    cursor: pointer;
-}
-.card__date{
-    font-size: 140%;
-    line-height: calc(22/14);
-    color: #B6BCBF;
-    margin: 0 0 16px;
-}
-.card__author{
-    font-family: Roboto-Slab;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 260%;
-    line-height: calc(30/26);
-    margin: 4px 0 2px;
-    color: #1A1B22;
-}
-.card__email{
-    font-size: 140%;
-    line-height: calc(22/14);
-    color: #1A1B22;
-    margin: 0;
-}
-.card__img{
-    margin-right: calc(16*100%/400);
-    height: 100%;
-}
-.card__mark{
-    background: #F5F6F7;
-}
-.card__comment{
-    font-size: 160%;
-    line-height: calc(22/16);
-    color: #1A1B22;
-    margin: 16px 0 0;
-}
-.card__title{
-    display: none;
-}
+
 @media screen and (max-width: 768px) and (min-width: 321px){
     .card{
         padding-left: calc(24*100%/768);
@@ -64,7 +27,6 @@
         padding-top: 24px;
         width: calc(336*100%/768);
     }
-
 }
 
 @media screen and (max-width: 320px) {

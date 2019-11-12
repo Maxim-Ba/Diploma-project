@@ -1,0 +1,8 @@
+.article__link{
+    display: block;
+    text-decoration: none;
+}
+.article__link:hover{
+    text-decoration: none;
+    cursor: pointer;
+}

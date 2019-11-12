@@ -1,0 +1,46 @@
+@import url(./_active/header__link_active.css);
+
+.header__link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(18*100%/10);
+    line-height: calc(24/18);
+    text-decoration: none;
+    color: #B6BCBF;
+    margin-left: 34px;
+    padding-bottom: 23px;
+    white-space: nowrap;
+}
+@media screen and (max-width: 768px) and (min-width: 391px){
+    .header__link{
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(18*100%/10);
+        line-height: calc(24/18);
+        text-decoration: none;
+        color: #B6BCBF;
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 348px) and (min-width: 391px){
+    .header__link{
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .header__link{
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(16*100%/10);
+        line-height: calc(24/16);
+        text-decoration: none;
+        color: #B6BCBF;
+        margin-left: calc(11*100%/130);
+        padding-bottom: 13px;
+        display: block;
+    }
+    .header__link:nth-of-type(1){
+        margin-left: 0;
+    }
+}

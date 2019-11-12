@@ -1,121 +1,22 @@
+@import url(./__container/technologies__container.css);
+@import url(./__item-header/technologies__item-header.css);
+@import url(./__item-tech/technologies__item-tech.css);
+@import url(./__list-of-tech/technologies__list-of-tech.css);
+@import url(./__title/technologies__title.css);
+
 .technologies{
     background: #F5F6F7;
     padding: 80px 0 97px;
 }
-.technologies__container{
-    display: flex;
-    justify-content: flex-start;
-}
-.technologies__title{
-    width: calc(344*100%/1232);
-    font-family: Roboto-Slab;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 400%;
-    line-height: calc(46/40);
-    margin: 0 calc(175*100%/1232) 0 0;
-}
-.technologies__list-of-tech{
-    display: flex;
-    padding: 0;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    min-width: calc(600*100%/1232);
-    margin: 0;
 
-}
-.technologies__item-tech{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-right: calc(40*100%/600);
-    font-size: 180%;
-    line-height: calc(24/18);
-    letter-spacing: 0.2px;
-    width: calc(120*100%/600);
-    height: calc(153*100%/120);
-}
-.technologies__item-tech:nth-child(4){
-    margin-right: 0;
-
-}
-.technologies__item-header{
-    margin: 0 0 23px;
-    display: block;
-}
-.technologies__item-img{
-    
-}
-@media screen and (max-width: 1095px) and (min-width: 821px){
-    .technologies__item-header{
-        height: 49px;
-    }
-}
 @media screen and (max-width: 820px) and (min-width: 321px){
     .technologies{
         padding: 40px 0 49px;
     }
-    .technologies__title{
-        width: calc(336*100%/688);
-        font-size: 300%;
-        line-height: calc(34/30);
-        margin: 0 0 40px;
-        display: block;
-    }
-    .technologies__container{
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-    }
-    .technologies__list-of-tech{
-        display: flex;
-        justify-content: space-between;
-    }
-    .technologies__item-tech{
-        margin-right: 0;
-    }
-    
 }
 
-@media screen and (max-width: 509px) and (min-width: 321px){
-    .technologies__item-header{
-        height: 49px;
-    }
-}
-@media screen and (max-width: 370px) and (min-width: 321px){
-    .technologies__list-of-tech{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-}
 @media screen and (max-width: 320px) {
     .technologies{
         padding: 32px 0 49px;
-    }
-    .technologies__container{
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-    }
-    .technologies__title{
-        width: 100%;
-        font-size: 300%;
-        line-height: calc(40/30);
-        margin: 0;
-    }
-    .technologies__item-tech{
-        margin-right: 0;
-    }
-    .technologies__list-of-tech{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .technologies__item-tech{
-        margin-right: 0;
-        width: calc(120*100%/320);
-        margin-top: 40px;
     }
 }

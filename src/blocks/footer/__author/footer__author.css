@@ -1,0 +1,30 @@
+.footer__author{
+    font-size: 160%;
+    line-height: calc(22/16);
+    color: #B6BCBF;
+    width: calc(200*100%/1232);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@media screen and (max-width: 768px) and (min-width: 425px){
+    .footer__author{
+        font-size: 160%;
+        line-height: calc(22/16);
+        color: #B6BCBF;
+        width: calc(200*100%/1232);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 424px){
+    .footer__author{
+        font-size: 160%;
+        line-height: calc(22/16);
+        color: #B6BCBF;
+        width: calc(200*100%/288);
+        margin-top: 0;
+        margin-bottom: 0;
+        grid-area: author;
+        padding-top: 40px;
+    }
+}

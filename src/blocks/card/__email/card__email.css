@@ -1,0 +1,6 @@
+.card__email{
+    font-size: 140%;
+    line-height: calc(22/14);
+    color: #1A1B22;
+    margin: 0;
+}

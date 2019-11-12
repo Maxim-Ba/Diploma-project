@@ -1,48 +1,17 @@
+@import url(./__title/for-clients__title.css);
+@import url(./__paragraph/for-clients__paragraph.css);
+@import url(./__information/for-clients__information.css);
 .for-clients{
     padding: 80px 0 94px;
 }
-.for-clients__title{
-    font-family: Roboto-Slab;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 400%;
-    line-height: calc(46/40);
-    margin-bottom: 24px;
-}
-.for-clients__information{
-    font-size: 180%;
-    line-height: calc(24/18);
-    width: calc(815*100%/1232);
-}
-.for-clients__paragraph{
-    font-size: inherit;
-    line-height: inherit;
-    width: 100%;
-    margin: 0 0 1em;
-}
+
 @media screen and (max-width: 768px) and (min-width: 321px){
     .for-clients{
         padding: 30px 0 26px;
     }
-    .for-clients__title{
-        font-size: 300%;
-        line-height: calc(34/30);
-        margin-bottom: 16px;
-    }
-    .for-clients__information{
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 320px) {
-    .for-clients{
-        padding: 16.46px 0 16px;
-    }
-    .for-clients__title{
-        font-size: 300%;
-        line-height: calc(40/30);
-        margin-bottom: 16.46px;
-    }
     .for-clients__information{
         width: 100%;
     }

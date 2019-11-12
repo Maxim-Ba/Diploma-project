@@ -1,0 +1,13 @@
+.diagram__left-column{
+    width: calc(104*100%/1232);
+}
+@media screen and (max-width: 768px) and (min-width: 421px){
+    .diagram__left-column{
+        width: calc(104*100%/688);
+    }
+}
+@media screen and (max-width: 420px) {
+    .diagram__left-column{
+        width: calc(64*100%/288);
+    }
+}

@@ -1,0 +1,23 @@
+.nothing-find__subtitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 180%;
+    line-height: calc(24/18);
+    text-align: center;
+    color: #B6BCBF;
+    display: block;
+    margin:  0 auto;
+    width: calc(256*100%/1440);
+}
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .nothing-find__subtitle{
+        width: calc(688*100%/768);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .nothing-find__subtitle{
+        width: calc(288*100%/388);
+    }
+}

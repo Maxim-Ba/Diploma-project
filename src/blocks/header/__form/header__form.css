@@ -1,0 +1,28 @@
+.header__form{
+    margin: 0 auto;
+    display: block;
+    width: calc(608*100%/1440);
+    position: relative;
+    border-radius: 100px;
+    min-height: 64px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .header__form{
+        width: calc(448*100%/768);
+        border-radius: 100px;
+        min-height: 56px;
+        min-width: 319px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .header__form{
+        width: calc(288*100%/320);
+        position: relative;
+        min-height: 128px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        min-width: unset;
+    }
+}

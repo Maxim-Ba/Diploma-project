@@ -1,0 +1,16 @@
+.header__links{
+    display: flex;
+}
+@media screen and (max-width: 768px) and (min-width: 391px){
+    .header__links{
+        display: flex;
+    }
+    .header__links a:first-child{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 348px) and (min-width: 391px){
+    .header__links a:first-child{
+        margin-left: 2px;
+    }
+}

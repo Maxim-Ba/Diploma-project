@@ -1,3 +1,11 @@
+@import url(./__title/article__title.css);
+@import url(./__source/article__source.css);
+@import url(./__link/article__link.css);
+@import url(./__img/article__img.css);
+@import url(./__discription/article__discription.css);
+@import url(./__date/article__date.css);
+@import url(./__container-margin-auto/article__container-margin-auto.css);
+
 .article{
     margin: 0 calc(8*100%/1248) 16px;
     background: #FFFFFF;
@@ -6,88 +14,14 @@
     border-top-right-radius: 7px 4px;
     overflow: hidden;
 }
-.article__link{
-    display: block;
-    text-decoration: none;
 
-
-}
-.article__link:hover{
-    text-decoration: none;
-    cursor: pointer;
-}
-.article__img{
-    margin-bottom: 20px;
-    width: 100%;
-}
-.article__container-margin-auto{
-    margin: 0 auto;
-    width: calc(352*100%/400);
-}
-.article__date{
-    font-family: Source-Sans-Pro, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 180%;
-    line-height: calc(24/18);
-    color: #B6BCBF;
-    margin-bottom: 12px;
-}
-.article__title{
-    margin-bottom: 16px;
-    font-family: Roboto-Slab, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 260%;
-    line-height: calc(30/26);
-    color: #1A1B22;
-}
-.article__discription{
-    margin-bottom: 18px;
-    font-size: 160%;
-    line-height: calc(22/16);
-    color: #1A1B22;
-}
-.article__source{
-    font-size: 160%;
-    line-height: calc(20/16);
-    text-transform: uppercase;
-    color: #B6BCBF;
-    font-style: normal;
-    font-weight: bold;
-}
-
-@media screen and (max-width: 768px) and (min-width: 358px){
-    .article__img{
-        margin-bottom: 16px;
-    }
-    .article__date{
-        font-size: 180%;
-        line-height: calc(24/18);
-        margin-bottom: 12px;
-    }
-    .article__title{
-        margin-bottom: 10px;
-        font-size: 220%;
-        line-height: calc(24/22);
-    }
-    .article__discription{
-        margin-bottom: 12px;
-        font-size: 160%;
-        line-height: calc(22/16);
-    }
-}
 @media screen and (max-width: 768px) and (min-width: 358px){
     .article{
         min-width: 180px;
         max-width: 224px;
     }
-
 }
 @media screen and (max-width: 357px) {
-    .article__img{
-        margin-bottom: 16px;
-    }
     .article{
         margin: 0 0 16px;
         background: #FFFFFF;

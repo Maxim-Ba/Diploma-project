@@ -1,0 +1,14 @@
+.article__img{
+    margin-bottom: 20px;
+    width: 100%;
+}
+@media screen and (max-width: 768px) and (min-width: 358px){
+    .article__img{
+        margin-bottom: 16px;
+    }
+}
+@media screen and (max-width: 357px) {
+    .article__img{
+        margin-bottom: 16px;
+    }
+}

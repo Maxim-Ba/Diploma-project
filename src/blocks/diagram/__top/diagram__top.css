@@ -1,0 +1,16 @@
+.diagram__top{
+    display: flex;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #1A1B22;
+}
+@media screen and (max-width: 768px) and (min-width: 421px){
+    .diagram__top{
+        padding-bottom: 23px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .diagram__top{
+        padding-bottom: 20px;
+        margin-bottom: 18px;
+    }
+}

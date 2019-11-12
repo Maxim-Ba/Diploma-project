@@ -1,0 +1,22 @@
+.for-clients__title{
+    font-family: Roboto-Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 400%;
+    line-height: calc(46/40);
+    margin-bottom: 24px;
+}
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .for-clients__title{
+        font-size: 300%;
+        line-height: calc(34/30);
+        margin-bottom: 16px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .for-clients__title{
+        font-size: 300%;
+        line-height: calc(40/30);
+        margin-bottom: 16.46px;
+    }
+}

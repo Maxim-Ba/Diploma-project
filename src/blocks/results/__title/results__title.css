@@ -1,0 +1,18 @@
+.results__title{
+    margin: 0;
+    font-family: Roboto-Slab, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 400%;
+    line-height: calc(46/40);
+    color: #1A1B22;
+    margin-bottom: 64px;
+}
+@media screen and (max-width: 357px) {
+    .results__title{
+        margin: 0;
+        font-size: 300%;
+        line-height: calc(34/30);
+        margin-bottom: 16.26px;
+    }
+}

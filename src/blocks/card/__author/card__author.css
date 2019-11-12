@@ -1,0 +1,9 @@
+.card__author{
+    font-family: Roboto-Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 260%;
+    line-height: calc(30/26);
+    margin: 4px 0 2px;
+    color: #1A1B22;
+}

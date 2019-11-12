@@ -1,0 +1,14 @@
+.footer__social-link{
+    margin-left: 28px;
+    display: block;
+}
+@media screen and (max-width: 768px) and (min-width: 425px){
+    .footer__social-link{
+        margin-left: 28px;
+    }
+}
+@media screen and (max-width: 424px){
+    .footer__social-link{
+        margin-left: 28px;
+    }
+}

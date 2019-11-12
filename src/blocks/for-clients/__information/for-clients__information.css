@@ -1,0 +1,15 @@
+.for-clients__information{
+    font-size: 180%;
+    line-height: calc(24/18);
+    width: calc(815*100%/1232);
+}
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .for-clients__information{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .for-clients__information{
+        width: 100%;
+    }
+}

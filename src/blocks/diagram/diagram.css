@@ -1,141 +1,23 @@
+@import url(./__date/diagram__date.css);
+@import url(./__day-1/diagram__day-1.css);
+@import url(./__day-2/diagram__day-2.css);
+@import url(./__day-3/diagram__day-3.css);
+@import url(./__day-4/diagram__day-4.css);
+@import url(./__day-5/diagram__day-5.css);
+@import url(./__day-6/diagram__day-6.css);
+@import url(./__day-7/diagram__day-7.css);
+@import url(./__day/diagram__day.css);
+@import url(./__left-column/diagram__left-column.css);
+@import url(./__line/diagram__line.css);
+@import url(./__number/diagram__number.css);
+@import url(./__numbers/diagram__numbers.css);
+@import url(./__right-column/diagram__right-column.css);
+@import url(./__row/diagram__row.css);
+@import url(./__scale/diagram__scale.css);
+@import url(./__top/diagram__top.css);
+@import url(./__amount/diagram__amount.css);
+
 .diagram{
     display: flex;
     flex-direction: column;
-}
-.diagram__top{
-    display: flex;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #1A1B22;
-}
-.diagram__date{
-    font-size: 120%;
-    line-height: calc(16/12);
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-    color: #B6BCBF;
-    margin: 0;
-    position: relative;
-}
-.diagram__date::after{
-    display: block;
-    content: '(Авгутс)';
-    position: absolute;
-}
-.diagram__amount{
-    font-size: 120%;
-    line-height: calc(16/12);
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-    color: #B6BCBF;
-    margin: 0;
-
-}
-.diagram__scale{
-    display: flex;
-    padding-top: 16px;
-}
-
-.diagram__numbers{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
-}
-.diagram__number{
-    font-size: 120%;
-    line-height: calc(16/12);
-    text-align: center;
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-    color: #B6BCBF;
-    margin: 0;
-    
-}
-.diagram__row{
-    display: flex;
-    margin-bottom: 56px;
-}
-.diagram__day{
-    margin: 0;
-    font-size: 180%;
-    color: #1A1B22;
-    display: flex;
-    align-items: center;
-}
-.diagram__line{
-    font-weight: bold;
-    font-size: 120%;
-    line-height: calc(16/12);
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    padding-left: 6px;
-    overflow: hidden;
-    background: linear-gradient(to right, #2F71E5 15%, #F5F6F7 15%, #F5F6F7 100%);
-}
-.day-1{
-    background: linear-gradient(to right, #2F71E5 15%, #F5F6F7 15%, #F5F6F7 100%);
-}
-.day-2{
-    background: linear-gradient(to right, #2F71E5 18%, #F5F6F7 18%, #F5F6F7 100%);
-}
-.day-3{
-    background: linear-gradient(to right, #2F71E5 11%, #F5F6F7 11%, #F5F6F7 100%);
-}
-.day-4{
-    background: linear-gradient(to right, #2F71E5 39%, #F5F6F7 39%, #F5F6F7 100%);
-}
-.day-5{
-    background: linear-gradient(to right, #2F71E5 45%, #F5F6F7 45%, #F5F6F7 100%);
-}
-.day-6{
-    background: linear-gradient(to right, #2F71E5 73%, #F5F6F7 73%, #F5F6F7 100%);
-}
-.day-7{
-    background: linear-gradient(to right, #2F71E5 34%, #F5F6F7 34%, #F5F6F7 100%);
-}
-
-.diagram__row_margin-b-0{
-    margin-bottom: 0;
-}
-.diagram__left-column{
-    width: calc(104*100%/1232);
-}
-.diagram__right-column{
-    width: calc(1128*100%/1232);
-}
-@media screen and (max-width: 768px) and (min-width: 421px){
-    .diagram__top{
-        padding-bottom: 23px;
-    }
-    .diagram__left-column{
-        width: calc(104*100%/688);
-    }
-    .diagram__right-column{
-        margin-left: calc(13*100%/688);
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .diagram__top{
-        padding-bottom: 20px;
-        margin-bottom: 18px;
-    }
-    .diagram__left-column{
-        width: calc(64*100%/288);
-    }
-    .diagram__right-column{
-        margin-left: 16px;
-    }
-    .diagram__scale{
-        display: none;
-    }
-    .diagram__row{
-        margin-bottom: 24px;
-    }
-    .diagram__row_margin-b-0{
-        margin-bottom: 0;
-    }
 }

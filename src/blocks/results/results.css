@@ -1,52 +1,11 @@
 @import url(../article/article.css);
+@import url(./__analitic/results__analitic.css);
+@import url(./__title/results__title.css);
+@import url(./__container/results__container.css);
+@import url(./__button/results__button.css);
 .results{
     padding: 80px 0;
     background: #F5F6F7;
-}
-.results__title{
-    margin: 0;
-    font-family: Roboto-Slab, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 400%;
-    line-height: calc(46/40);
-    color: #1A1B22;
-    margin-bottom: 64px;
-}
-.results__analitic{
-    font-weight: 500;
-    font-size: 180%;
-    line-height: calc(24/18);
-    color: #1A1B22;
-    text-decoration: none;
-    margin-bottom: 72px;
-}
-.results__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.results__container_m-r-l-8px{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 0 -8px;
-}
-.results__button{
-    position: relative;
-    width: calc(288*100%/1232);
-    margin:  48px auto 0 auto;
-    background: #FFFFFF;
-    border-radius: 80px;
-    color: #1A1B22;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 180%;
-    line-height: calc(24/18);
-}
-.results__button:hover{
-    opacity: 0.9;
 }
 a:hover{
     text-decoration: none;
@@ -56,48 +15,10 @@ a:hover{
     .results{
         padding: 40px 0;
     }
-    .results__container_m-r-l-8px{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        margin: 0 calc(-4*100%/696);
-    }
-    .results__button{
-        width: calc(240*100%/768);
-        margin:  22px auto 0 auto;
-    }
-    
 }
 
 @media screen and (max-width: 357px) {
     .results{
         padding: 32px 0 44px;
-    }
-    .results__container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .results__container_m-r-l-8px{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin: 0 auto;
-    }
-    .results__button{
-        width: calc(288*100%/320);
-        margin: 0 auto;
-    }
-
-    .results__title{
-        margin: 0;
-        font-size: 300%;
-        line-height: calc(34/30);
-        margin-bottom: 16.26px;
-    }
-    .results__analitic{
-        font-size: 180%;
-        line-height: calc(24/18);
-        margin-bottom: 39.8px;
     }
 }

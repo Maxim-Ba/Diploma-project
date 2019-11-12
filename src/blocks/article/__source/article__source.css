@@ -1,0 +1,8 @@
+.article__source{
+    font-size: 160%;
+    line-height: calc(20/16);
+    text-transform: uppercase;
+    color: #B6BCBF;
+    font-style: normal;
+    font-weight: bold;
+}

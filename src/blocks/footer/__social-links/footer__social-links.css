@@ -1,0 +1,18 @@
+.footer__social-links{
+    margin-left: -28px;
+    display: flex;
+}
+@media screen and (max-width: 768px) and (min-width: 425px){
+    .footer__social-links{
+        margin-left: -28px;
+        
+    }
+}
+@media screen and (max-width: 424px){
+    .footer__social-links{
+        margin-left: 0px;
+        grid-area: social-links;
+        justify-content: flex-start;
+        justify-self: end;
+    }
+}
