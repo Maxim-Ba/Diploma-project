@@ -31,7 +31,7 @@
 @import url(../vendor/normalize.css);
 @import url(../blocks/common/common.css);
 @import url(../blocks/header/header.css);
-@import url(../blocks/header/header_no-background.css);
+@import url(../blocks/header/_no-background/header_no-background.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/analytics-block/analytics-block.css);
 

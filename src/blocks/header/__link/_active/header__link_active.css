@@ -1,4 +1,4 @@
-.header__link_active{
+.header__link.header__link_active{
     color: #ffffff;
     border-bottom: #ffffff 3px solid;
 }
@@ -8,7 +8,7 @@
         border-bottom: #ffffff 3px solid;
     }
 }
-@media screen and (max-width: 391px) and (min-width: 348px){
+@media screen and (max-width: 391px){
     .header__link_active{
         color: #ffffff;
         border-bottom: #ffffff 3px solid;

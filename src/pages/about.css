@@ -33,8 +33,7 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/about-author/about-author.css);
-/* index1 */
-@import url(../blocks/header/header_no-background.css);
+@import url(../blocks/header/_no-background/header_no-background.css);
 @import url(../blocks/about-project/about-project.css);
 
 .root{
