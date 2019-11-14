@@ -1,0 +1,39 @@
+@import url(./__author/card__author.css);
+@import url(./__comment/card__comment.css);
+@import url(./__container/card__container.css);
+@import url(./__date/card__date.css);
+@import url(./__email/card__email.css);
+@import url(./__img/card__img.css);
+@import url(./__link/card__link.css);
+@import url(./__title/card__title.css);
+@import url(./__mark/card__mark.css);
+.card{
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding-left: calc(24*100%/1440);
+    padding-right: calc(24*100%/1440);
+    padding-top: 24px;
+    width: calc(400*100%/1440);
+    box-sizing: border-box;
+    margin-right: 16px;
+    z-index: 1;
+    min-width: 240px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .card{
+        padding-left: calc(24*100%/768);
+        padding-right: calc(24*100%/768);
+        padding-top: 24px;
+        width: calc(336*100%/768);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card{
+        padding-left: calc(16*100%/320);
+        padding-right: calc(16*100%/320);
+        padding-top: 16px;
+        width: calc(288*100%/320);
+    }
+}

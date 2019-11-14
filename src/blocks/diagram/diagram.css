@@ -1,0 +1,23 @@
+@import url(./__date/diagram__date.css);
+@import url(./_day-1/diagram_day-1.css);
+@import url(./_day-2/diagram_day-2.css);
+@import url(./_day-3/diagram_day-3.css);
+@import url(./_day-4/diagram_day-4.css);
+@import url(./_day-5/diagram_day-5.css);
+@import url(./_day-6/diagram_day-6.css);
+@import url(./_day-7/diagram_day-7.css);
+@import url(./__day/diagram__day.css);
+@import url(./__left-column/diagram__left-column.css);
+@import url(./__line/diagram__line.css);
+@import url(./__number/diagram__number.css);
+@import url(./__numbers/diagram__numbers.css);
+@import url(./__right-column/diagram__right-column.css);
+@import url(./__row/diagram__row.css);
+@import url(./__scale/diagram__scale.css);
+@import url(./__top/diagram__top.css);
+@import url(./__amount/diagram__amount.css);
+
+.diagram{
+    display: flex;
+    flex-direction: column;
+}

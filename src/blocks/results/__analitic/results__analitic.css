@@ -1,0 +1,15 @@
+.results__analitic{
+    font-weight: 500;
+    font-size: 180%;
+    line-height: calc(24/18);
+    color: #1A1B22;
+    text-decoration: none;
+    margin-bottom: 72px;
+}
+@media screen and (max-width: 357px) {
+    .results__analitic{
+        font-size: 180%;
+        line-height: calc(24/18);
+        margin-bottom: 39.8px;
+    }
+}

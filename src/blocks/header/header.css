@@ -1,0 +1,8 @@
+@import url(./__top/header__top.css);
+@import url(./__bottom/header__bottom.css);
+.header{
+    background-image: url(../../images/header-backgrouund.jpg);
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

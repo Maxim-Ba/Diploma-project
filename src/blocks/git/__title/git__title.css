@@ -1,0 +1,36 @@
+.git__title{
+    font-family: Roboto-Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 400%;
+    line-height: calc(46/40);
+    color: #1A1B22;
+    margin: 0 0 64px;
+}
+@media screen and (max-width: 768px) and (min-width: 421px){
+    .git__title{
+        font-size: 400%;
+        line-height: calc(46/40);
+        margin: 0 0 32px;
+        display: block;
+        width: calc(336*100%/688);
+    }
+}
+@media screen and (max-width: 420px) and (min-width: 364px){
+    .git__title{
+        font-size: 280%;
+        line-height: calc(40/28);
+        margin: 0 0 32px;
+        display: block;
+    }
+}
+@media screen and (max-width: 364px) {
+    .git__title{
+        font-size: 300%;
+        line-height: calc(40/30);
+        margin: 0 0 18px;
+        display: block;
+        width: 100%;
+        padding-right: 20%;
+    }
+}

@@ -1,0 +1,13 @@
+@import url(./_m-r-l-8px/results__container_m-r-l-8px.css);
+.results__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 357px) {
+    .results__container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

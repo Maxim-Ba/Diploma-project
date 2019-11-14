@@ -1,0 +1,13 @@
+.diagram__right-column{
+    width: calc(1128*100%/1232);
+}
+@media screen and (max-width: 768px) and (min-width: 421px){
+    .diagram__right-column{
+        margin-left: calc(13*100%/688);
+    }
+}
+@media screen and (max-width: 420px) {
+    .diagram__right-column{
+        margin-left: 16px;
+    }
+}

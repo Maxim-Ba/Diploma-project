@@ -1,0 +1,22 @@
+@import url(./__container/technologies__container.css);
+@import url(./__item-header/technologies__item-header.css);
+@import url(./__item-tech/technologies__item-tech.css);
+@import url(./__list-of-tech/technologies__list-of-tech.css);
+@import url(./__title/technologies__title.css);
+
+.technologies{
+    background: #F5F6F7;
+    padding: 80px 0 97px;
+}
+
+@media screen and (max-width: 820px) and (min-width: 321px){
+    .technologies{
+        padding: 40px 0 49px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .technologies{
+        padding: 32px 0 49px;
+    }
+}

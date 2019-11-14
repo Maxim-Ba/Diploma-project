@@ -1,0 +1,7 @@
+.diagram__day{
+    margin: 0;
+    font-size: 180%;
+    color: #1A1B22;
+    display: flex;
+    align-items: center;
+}

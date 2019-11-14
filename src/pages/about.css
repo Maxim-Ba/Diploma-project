@@ -1,0 +1,52 @@
+@font-face{
+    font-family: Roboto;
+    src : url('../vendor/fonts/roboto-regular-webfont.woff') format('woff'); 
+    font-style : normal;  
+    font-weight : normal;
+}
+@font-face{
+    font-family: Roboto;
+    src : url('../vendor/fonts/roboto-medium-webfont.woff') format('woff'); 
+    font-style : normal;  
+    font-weight : 500;
+}
+@font-face{
+    font-family: Roboto-Slab;
+    src : url('../vendor/fonts/robotoslab-regular-webfont.woff') format('woff'); 
+    font-style : normal;  
+    font-weight : normal;
+}
+@font-face{
+    font-family: Roboto-Slab;
+    src : url('../vendor/fonts/RobotoSlab-Bold.woff') format('woff'); 
+    font-style : normal;  
+    font-weight : bold;
+}
+@font-face{
+    font-family: Source-Sans-Pro;
+    src : url('../vendor/fonts/SourceSansPro-Regular.woff') format('woff'); 
+    font-style : normal;  
+    font-weight : normal;
+}
+@import url(../vendor/normalize.css);
+@import url(../blocks/common/common.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/about-author/about-author.css);
+@import url(../blocks/header/_no-background/header_no-background.css);
+@import url(../blocks/about-project/about-project.css);
+
+.root{
+    max-width: 1440px;
+    width: 100%;
+    margin:0 auto;
+    background: #FFFFFF;
+    font-size: 10px;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

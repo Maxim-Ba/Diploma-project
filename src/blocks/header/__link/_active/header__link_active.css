@@ -1,0 +1,16 @@
+.header__link.header__link_active{
+    color: #ffffff;
+    border-bottom: #ffffff 3px solid;
+}
+@media screen and (max-width: 768px) and (min-width: 391px){
+    .header__link_active{
+        color: #ffffff;
+        border-bottom: #ffffff 3px solid;
+    }
+}
+@media screen and (max-width: 391px){
+    .header__link_active{
+        color: #ffffff;
+        border-bottom: #ffffff 3px solid;
+    }
+}

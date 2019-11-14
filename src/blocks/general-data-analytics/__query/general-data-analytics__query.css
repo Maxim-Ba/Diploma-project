@@ -1,0 +1,23 @@
+.general-data-analytics__query{
+    font-family: Roboto-Slab, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 400%;
+    line-height: calc(46/40);
+    margin: 0 0 24px;
+    color: #1A1B22;
+}
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .general-data-analytics__query{
+        font-size: 320%;
+        line-height: calc(34/32);
+        margin: 0 0 24px;
+    }
+}
+@media screen and (max-width: 320px){
+    .general-data-analytics__query{
+        font-size: 300%;
+        line-height: calc(34/30);
+        margin: 0 0 16px;
+    }
+}

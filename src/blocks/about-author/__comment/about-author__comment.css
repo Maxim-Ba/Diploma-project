@@ -1,0 +1,22 @@
+.about-author__comment{
+    font-size: 180%;
+    line-height: calc(24/18);
+    width: calc(600*100%/712);
+    margin-top: 0;
+    color: #1A1B22;
+    margin-bottom: 0;
+    display: block;
+    margin-top: 0;
+}
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .about-author__comment{
+        width: 100%;
+        margin-bottom: 4px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .about-author__comment{
+        width: 100%;
+        margin-bottom: 4px;
+    }
+}

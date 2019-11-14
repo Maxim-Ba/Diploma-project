@@ -1,0 +1,8 @@
+.diagram__amount{
+    font-size: 120%;
+    line-height: calc(16/12);
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    margin: 0;
+}

@@ -1,0 +1,20 @@
+@import url(../diagram/diagram.css);
+@import url(./__title/detail-analytics__title.css);
+.detail-analytics{
+    background: #F5F6F7;
+    padding: 80px 0 72px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .detail-analytics{
+        background: #F5F6F7;
+        padding: 40px 0 32px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .detail-analytics{
+        background: #F5F6F7;
+        padding: 24px 0 38px;
+    }
+}

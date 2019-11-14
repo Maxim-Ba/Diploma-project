@@ -1,0 +1,24 @@
+@import url(../card/card.css);
+@import url(../../vendor/flickity/flickity.css);
+@import url(../git/__head/git__head.css);
+@import url(../git/__title/git__title.css);
+@import url(../git/__open/git__open.css);
+@import url(../git/__slider/git__slider.css);
+@import url(../git/__button_mobile.css/git__button_mobile.css);
+
+.git{
+    background: #F5F6F7;
+    padding: 72px 0 80px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 364px){
+    .git{
+        padding: 40px 0 40px;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .git{
+        padding: 32px 0 32px;
+    }
+}

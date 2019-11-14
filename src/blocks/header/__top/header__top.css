@@ -1,0 +1,21 @@
+@import url(../__container/header__container.css);
+@import url(../__link/header__link.css);
+@import url(../__links/header__links.css);
+@import url(../__logo/header__logo.css);
+@import url(./_no-background/header__top_no-background.css);
+.header__top{
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 391px){
+    .header__top{
+        padding-top: 22px;
+    } 
+}
+
+@media screen and (max-width: 390px){
+    .header__top{
+        padding-top: 16px;
+    }
+}

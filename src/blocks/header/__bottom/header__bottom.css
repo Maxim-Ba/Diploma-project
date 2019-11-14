@@ -1,0 +1,25 @@
+@import url(../__error/header__error.css);
+@import url(../__form/header__form.css);
+@import url(../__input/header__input.css);
+@import url(../__subtitle/header__subtitle.css);
+@import url(../__title-container/header__title-container.css);
+@import url(../__title/header__title.css);
+
+.header__bottom{
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .header__bottom{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__bottom{
+        padding-top: 30px;
+        padding-bottom: 32px;
+    }
+}

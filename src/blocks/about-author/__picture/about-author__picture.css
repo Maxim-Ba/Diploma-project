@@ -1,0 +1,22 @@
+.about-author__picture{
+    min-width: calc(464*100%/1232);
+    margin-right: calc(56*100%/1232);
+    display: block;
+    height: 100%;
+}
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .about-author__picture{
+        min-width: calc(232*100%/688);
+        margin-right: calc(32*100%/688);
+        display: block;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .about-author__picture{
+        min-width: calc(272*100%/288);
+        margin: 0 auto;
+        display: block;
+        height: 100%;
+    }
+}

@@ -1,0 +1,4 @@
+.article__container-margin-auto{
+    margin: 0 auto;
+    width: calc(352*100%/400);
+}

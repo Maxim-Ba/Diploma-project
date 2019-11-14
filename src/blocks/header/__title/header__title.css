@@ -1,0 +1,29 @@
+.header__title{
+    font-family: Roboto-Slab, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 600%;
+    line-height: calc(64/60);
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 32px;
+    min-height: 128px;
+}
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .header__title{
+        font-size: 360%;
+        line-height: calc(40/36);
+        margin: 0 auto;
+        margin-bottom: 16px;
+        min-height: 80px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .header__title{
+        font-size: 360%;
+        line-height: calc(40/36);
+        margin: 0 auto;
+        margin-bottom: 56px;
+        min-height: 80px;
+    }
+}

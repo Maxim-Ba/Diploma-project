@@ -1,0 +1,21 @@
+.footer__nav-link{
+    display: block;
+    font-size: 180%;
+    line-height: calc(24/18);
+    text-align: center;
+    color: #1A1B22;
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) and (min-width: 425px){
+    .footer__nav-link{
+        font-size: 2.343vw;
+        line-height: calc(24/18);
+    }
+}
+@media screen and (max-width: 424px){
+    .footer__nav-link{
+        font-size: 180%;
+        line-height: calc(24/18);
+        text-align: left;
+    }
+}

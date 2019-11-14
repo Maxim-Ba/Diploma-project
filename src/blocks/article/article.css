@@ -1,0 +1,31 @@
+@import url(./__title/article__title.css);
+@import url(./__source/article__source.css);
+@import url(./__link/article__link.css);
+@import url(./__img/article__img.css);
+@import url(./__discription/article__discription.css);
+@import url(./__date/article__date.css);
+@import url(./__container-margin-auto/article__container-margin-auto.css);
+
+.article{
+    margin: 0 calc(8*100%/1248) 16px;
+    background: #FFFFFF;
+    width: calc(400*100%/1248);
+    border-top-left-radius: 7px 4px;
+    border-top-right-radius: 7px 4px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) and (min-width: 358px){
+    .article{
+        min-width: 180px;
+        max-width: 224px;
+    }
+}
+@media screen and (max-width: 357px) {
+    .article{
+        margin: 0 0 16px;
+        background: #FFFFFF;
+        width: 100%;
+        min-width: unset;
+    }
+}

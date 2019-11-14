@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Приложение - поиск новостей(дипломный проект Яндекс Практикум)"> 
+  <meta name="author" content="Balashov Maxim">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NewsAnalyzer by Balashov Maxim</title>
+  <link type="text/css" rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.analytics.css %>">
+  <link rel="icon" href="<%=require('../images/favicon/A-blue.ico')%>">
+</head>
+<body>
+  <div class="root">
+    <header class="header header_no-background">
+      <section class="header__top header__top_no-background">
+        <div class="content-margin-l-r header__container">
+          <h2 class="header__logo header__logo_color-black">NewsAnalyzer</h2>
+          <nav class="header__links">
+            <a href="./index.html" class="header__link">Главная</a>
+            <a href="./about.html" class="header__link">О проекте</a>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <main class="analytics-block">
+      <section class="general-data-analytics">
+          <div class="content-margin-l-r">
+            <h1 class="general-data-analytics__title">Главная <span class="general-data-analytics__mark-grey">/ Аналитика</span></h1>
+            <h2 class="general-data-analytics__query">Вы спросили: «Путешествия»</h2>
+            <p class="general-data-analytics__statistics">Новостей за неделю: <span class="general-data-analytics__mark">34 324</span></p>
+            <p class="general-data-analytics__statistics">Упоминаний в загаловках: <span class="general-data-analytics__mark">235</span></p>
+          </div>
+      </section>
+      <section class="detail-analytics">
+          <div class="content-margin-l-r">
+            <h2 class="detail-analytics__title">Аналитика по дням</h2>
+            <div class="diagram">
+              <div class="diagram__top">
+                <p class="diagram__date diagram__left-column">Дата</p>
+                <p class="diagram__amount diagram__right-column">Кол-во упоминаний</p>
+              </div>
+              <div class="diagram__scale">
+                <div class="diagram__empty-block diagram__left-column"></div>
+                <div class="diagram__numbers diagram__right-column">
+                  <p class="diagram__number">0</p>
+                  <p class="diagram__number">25</p>
+                  <p class="diagram__number">50</p>
+                  <p class="diagram__number">75</p>
+                  <p class="diagram__number">100</p>
+                </div>
+              </div>
+              <div class="diagram__row">
+                <p class="diagram__day diagram__left-column">19, пн</p>
+                <div id="day-1" class="diagram__line diagram__right-column diagram_day-1">15</div>
+              </div>
+              <div class="diagram__row">
+                <p class="diagram__day diagram__left-column">20, вт</p>
+                <div id="day-2" class="diagram__line diagram__right-column diagram_day-2">18</div>
+              </div>
+              <div class="diagram__row">
+                <p class="diagram__day diagram__left-column">21, ср</p>
+                <div id="day-3" class="diagram__line diagram__right-column diagram_day-3">11</div>
+              </div>
+              <div class="diagram__row">
+                <p class="diagram__day diagram__left-column">22, чт</p>
+                <div id="day-4" class="diagram__line diagram__right-column diagram_day-4">39</div>
+              </div>
+              <div class="diagram__row">
+                <p class="diagram__day diagram__left-column">23, пт</p>
+                <div id="day-5" class="diagram__line diagram__right-column diagram_day-5">45</div>
+              </div>
+              <div class="diagram__row">
+                <p class="diagram__day diagram__left-column">24, сб</p>
+                <div id="day-6" class="diagram__line diagram__right-column diagram_day-6">73</div>
+              </div>
+              <div class="diagram__row diagram__row_margin-b-0">
+                <p class="diagram__day diagram__left-column">25, вс</p>
+                <div id="day-7" class="diagram__line diagram__right-column diagram_day-7">34</div>
+              </div>
+              <div class="diagram__scale">
+                  <div class="diagram__empty-block diagram__left-column"></div>
+                  <div class="diagram__numbers diagram__right-column">
+                    <p class="diagram__number">0</p>
+                    <p class="diagram__number">25</p>
+                    <p class="diagram__number">50</p>
+                    <p class="diagram__number">75</p>
+                    <p class="diagram__number">100</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      
+    </main>
+    <footer class="footer">
+        <div class="content-margin-l-r footer__container">
+          <p class="footer__author">&#169; 2019 Supersite</p>
+          <nav class="footer__nav">
+            <a href="./index.html" class="footer__nav-link">Главная</a>
+            <a href="./about.html" class="footer__nav-link">О проекте</a>
+            <a href="https://praktikum.yandex.ru/" class="footer__nav-link">Яндекс.Практикум</a>
+          </nav>
+          <nav class="footer__social-links">
+            <a href="https://github.com/Maxim-Ba/Diploma-project" class="footer__social-link" target="_blank">
+              <img class="foter__icon"
+                src="<%=require('../images/gh-icon.svg')%>" alt="github icon">
+            </a>
+            <a href="#" class="footer__social-link" target="_blank">
+              <img class="foter__icon"
+                src="<%=require('../images/facebook-icon.svg')%>" alt="facebook icon">
+            </a>
+          </nav>
+        </div>
+      </footer>
+  </div>
+  <script type="module" src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
+</body>
+</html>

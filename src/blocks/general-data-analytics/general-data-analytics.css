@@ -1,0 +1,22 @@
+@import url(./__title/general-data-analytics__title.css);
+@import url(./__statistics/general-data-analytics__statistics.css);
+@import url(./__query/general-data-analytics__query.css);
+@import url(./__mark/general-data-analytics__mark.css);
+@import url(./__mark-grey/general-data-analytics__mark-grey.css);
+
+.general-data-analytics{
+    background: #FFFFFF;
+    padding: 40px 0 76px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .general-data-analytics{
+        padding: 32px 0 40px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .general-data-analytics{
+        padding: 16px 0 24px;
+    }
+}

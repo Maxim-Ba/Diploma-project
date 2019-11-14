@@ -1,0 +1,10 @@
+@import url(./__row_margin-b-0/diagram__row_margin-b-0.css);
+.diagram__row{
+    display: flex;
+    margin-bottom: 56px;
+}
+@media screen and (max-width: 420px) {
+    .diagram__row{
+        margin-bottom: 24px;
+    }
+}

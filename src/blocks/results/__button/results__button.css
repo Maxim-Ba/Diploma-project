@@ -1,0 +1,28 @@
+.results__button{
+    position: relative;
+    width: calc(288*100%/1232);
+    margin:  48px auto 0 auto;
+    background: #FFFFFF;
+    border-radius: 80px;
+    color: #1A1B22;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 180%;
+    line-height: calc(24/18);
+}
+.results__button:hover{
+    opacity: 0.9;
+}
+@media screen and (max-width: 768px) and (min-width: 321px){
+    .results__button{
+        width: calc(240*100%/768);
+        margin:  22px auto 0 auto;
+    }
+}
+@media screen and (max-width: 357px) {
+    .results__button{
+        width: calc(288*100%/320);
+        margin: 0 auto;
+    }
+}

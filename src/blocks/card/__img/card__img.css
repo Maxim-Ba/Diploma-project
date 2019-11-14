@@ -1,0 +1,4 @@
+.card__img{
+    margin-right: calc(16*100%/400);
+    height: 100%;
+}
