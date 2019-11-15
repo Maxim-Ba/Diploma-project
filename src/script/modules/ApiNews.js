@@ -25,7 +25,7 @@ export default class NewsApi {
         return Promise.reject(`Ошибка: ${res.status}`);
     })
     .then(res => {
-      return console.log(res.articles);
+      return res.articles;
   })
 };
 }
