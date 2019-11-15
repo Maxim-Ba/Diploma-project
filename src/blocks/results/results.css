@@ -3,9 +3,11 @@
 @import url(./__title/results__title.css);
 @import url(./__container/results__container.css);
 @import url(./__button/results__button.css);
+@import url(./_closed/results_closed.css);
 .results{
     padding: 80px 0;
     background: #F5F6F7;
+    display: block;
 }
 a:hover{
     text-decoration: none;
