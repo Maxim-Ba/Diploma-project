@@ -1,5 +1,6 @@
+@import url(./_closed/header__error_closed.css);
 .header__error{
-    display: none;
+    display: block;
     color: rgb(121, 54, 54);
     min-width: 90%;
     box-sizing: border-box;

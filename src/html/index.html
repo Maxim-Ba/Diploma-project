@@ -28,10 +28,10 @@
           <p class="header__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</p>
         </div>
         
-        <form class="header__form" action="./index.html">
-          <input class="header__input" type="text" placeholder="Введите тему новости" pattern="^([А-Яёа-яёA-Za-z0-9_\-\s])*$" minlength=2 value="">
-          <span class="header__error">Нужно ввести ключевое слово</span>
-          <button class="button button_blue">Искать</button>
+        <form class="header__form" action="#">
+          <input class="header__input" type="text" placeholder="Введите тему новости" value="" required>
+          <span class="header__error header__error_closed">Нужно ввести ключевое слово</span>
+          <button class="button button_blue" type="submit" disabled>Искать</button>
         </form>
       </section>
     </header>
