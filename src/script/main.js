@@ -4,6 +4,7 @@ import Card from './modules/Card';
 import HideOrVisualBlock from './modules/MainBlockModule';
 import removeOldCards from './functions/removeOldCards';
 import Validate from './modules/Validate';
+import {hideResultTitle, showResultTitle} from './functions/showResultTitle'
 // ---------Card
 const containerCards = document.querySelector('.results__container_m-r-l-8px');
 // ---------Card
@@ -26,6 +27,7 @@ queryButton.addEventListener('click', function () {
   showHideLoadingBlock.makeVisible();
   showHideNothinFindBlock.makeHide();
   showHideResultsBlock.makeHide();
+  showResultTitle();
   removeOldCards(containerCards);
   news.getArticlesInformation()
     .then(res => {
@@ -35,13 +37,14 @@ queryButton.addEventListener('click', function () {
     .catch((err) => {
       console.log(err);
       showHideLoadingBlock.makeHide();
+      hideResultTitle();
     });
   event.preventDefault();
 });
 // ---------Api
 //Script render Card
 function showHideFunction() {
-  
+  hideResultTitle()
   showHideLoadingBlock.makeHide();
   const informationArticles = JSON.parse(window.sessionStorage.request);
   if (informationArticles.length === 0) {
@@ -49,7 +52,7 @@ function showHideFunction() {
     return console.log(`Ничего не найдено`);
   }
   informationArticles.forEach(element => {
-    let card = new Card(element, containerCards);
+    new Card(element, containerCards);
   });
   showHideResultsBlock.makeVisible();
 }
