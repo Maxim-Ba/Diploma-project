@@ -1,10 +1,12 @@
 import '../pages/main.css';
 import NewsApi from './modules/ApiNews';
-import Card from './modules/Card';
+// import Card from './modules/Card';
+import showLineOfCards from './modules/showLineOfCards';
 import HideOrVisualBlock from './modules/MainBlockModule';
 import removeOldCards from './functions/removeOldCards';
 import Validate from './modules/Validate';
 import {hideResultTitle, showResultTitle} from './functions/showResultTitle'
+
 // ---------Card
 const containerCards = document.querySelector('.results__container_m-r-l-8px');
 // ---------Card
@@ -32,7 +34,7 @@ queryButton.addEventListener('click', function () {
   news.getArticlesInformation()
     .then(res => {
         window.sessionStorage.setItem('request', JSON.stringify(res));
-      return showHideFunction();
+      return showFunction();
     })
     .catch((err) => {
       console.log(err);
@@ -42,8 +44,14 @@ queryButton.addEventListener('click', function () {
   event.preventDefault();
 });
 // ---------Api
+
+// ---------Показать еще
+const resultButton = document.querySelector('.results__button')
+const showLine = new showLineOfCards(resultButton, containerCards)
+// ---------Показать еще
+
 //Script render Card
-function showHideFunction() {
+function showFunction() {
   hideResultTitle()
   showHideLoadingBlock.makeHide();
   const informationArticles = JSON.parse(window.sessionStorage.request);
@@ -51,9 +59,8 @@ function showHideFunction() {
     showHideNothinFindBlock.makeVisible();
     return console.log(`Ничего не найдено`);
   }
-  informationArticles.forEach(element => {
-    new Card(element, containerCards);
-  });
+  showLine.informationArticles = informationArticles;
+  showLine.showThreeCards();
   showHideResultsBlock.makeVisible();
 }
 
