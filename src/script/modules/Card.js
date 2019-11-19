@@ -4,11 +4,18 @@ export default class Card{
   constructor(cardObject, parentElement){
     this.source = cardObject.source.name;
     this.title = cardObject.title;
+    this.addThreeDot = this.addThreeDot;
     this.publishedAt = formatDate(cardObject.publishedAt);
-    this.description = cardObject.description;
+    this.description = this.addThreeDot(cardObject.description);
     this.urlToImage = cardObject.urlToImage;
     this.parentElement = parentElement;
     parentElement.appendChild(this.render());
+  }
+  addThreeDot(string){
+    if (document.body.clientWidth > 900) {
+      return string.slice(0, 186) + '...';
+    }
+    return string.slice(0, 111) + '...';
   }
   render(){
     //make elements and attributs

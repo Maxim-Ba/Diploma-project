@@ -1,12 +1,10 @@
 import '../pages/main.css';
 import NewsApi from './modules/ApiNews';
-// import Card from './modules/Card';
 import showLineOfCards from './modules/showLineOfCards';
 import HideOrVisualBlock from './modules/MainBlockModule';
 import removeOldCards from './functions/removeOldCards';
 import Validate from './modules/Validate';
-import {hideResultTitle, showResultTitle} from './functions/showResultTitle'
-
+import {hideResultTitle, showResultTitle, renderError} from './functions/showResultTitle'
 // ---------Card
 const containerCards = document.querySelector('.results__container_m-r-l-8px');
 // ---------Card
@@ -33,13 +31,15 @@ queryButton.addEventListener('click', function () {
   removeOldCards(containerCards);
   news.getArticlesInformation()
     .then(res => {
+        debugger
         window.sessionStorage.setItem('request', JSON.stringify(res));
       return showFunction();
     })
     .catch((err) => {
       console.log(err);
       showHideLoadingBlock.makeHide();
-      hideResultTitle();
+      // hideResultTitle();
+      renderError(err);
     });
   event.preventDefault();
 });
@@ -52,7 +52,8 @@ const showLine = new showLineOfCards(resultButton, containerCards)
 
 //Script render Card
 function showFunction() {
-  hideResultTitle()
+  console.log('showFunction');
+  hideResultTitle();
   showHideLoadingBlock.makeHide();
   const informationArticles = JSON.parse(window.sessionStorage.request);
   if (informationArticles.length === 0) {
@@ -63,4 +64,3 @@ function showFunction() {
   showLine.showThreeCards();
   showHideResultsBlock.makeVisible();
 }
-

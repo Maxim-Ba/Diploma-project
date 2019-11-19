@@ -3,7 +3,7 @@ export default class NewsApi {
     this.stringNews = input;
     this._apiKey = '13f71805e5ce4249978a94ba058cd269';
     this._dataFrom = new Date();
-    this._dataTo = new Date(this._dataFrom.valueOf() - ((24 * 60 * 60 * 1000) * 7))
+    this._dataTo = new Date(this._dataFrom.valueOf() - ((24 * 60 * 60 * 1000) * 7));
     this._language = 'ru';
     this._pageSize = '100';
     this._queryString = 'https://newsapi.org/v2/everything?';
@@ -12,7 +12,7 @@ export default class NewsApi {
       '&to=' + this._dataTo.toISOString() +
       '&language=' + this._language +
       '&pageSize=' + this._pageSize;
-    this.getArticlesInformation = this.getArticlesInformation.bind(this)
+    this.getArticlesInformation = this.getArticlesInformation.bind(this);
   }
   getArticlesInformation(){
     return fetch(this._queryString +'q='+ this.stringNews.value + this._queryStringOptions, {
@@ -29,4 +29,3 @@ export default class NewsApi {
   })
 };
 }
-
