@@ -20,6 +20,7 @@ const validateForm = new Validate(formElement, queryButton, warningField);
 // ---------ValidateForm
 // ---------Api
 const news = new NewsApi(queryInput);
+
 const  showHideLoadingBlock = new HideOrVisualBlock(loadingBlock, 'loading');
 const  showHideNothinFindBlock = new HideOrVisualBlock(nothinFindBlock, 'nothing-find');
 const  showHideResultsBlock = new HideOrVisualBlock(resultsBlock, 'results');
@@ -31,8 +32,9 @@ queryButton.addEventListener('click', function () {
   removeOldCards(containerCards);
   news.getArticlesInformation()
     .then(res => {
-        debugger
         window.sessionStorage.setItem('request', JSON.stringify(res));
+        window.localStorage.setItem('request', JSON.stringify(res));
+        window.localStorage.setItem('q', queryInput.value);
       return showFunction();
     })
     .catch((err) => {
