@@ -6,9 +6,5 @@
     color: #B6BCBF;
     margin: 0;
     position: relative;
-}
-.diagram__date::after{
-    display: block;
-    content: '(Авгутс)';
-    position: absolute;
+    overflow-wrap: break-word;
 }
