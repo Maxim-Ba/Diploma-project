@@ -1,6 +1,6 @@
 import '../pages/analytics.css';
 import sortByDay from './modules/countAnalytics';
-import {nowDay, nowMonth} from './functions/nowDay';
+import {nowMonth} from './functions/nowDay';
 
 const reqest = JSON.parse(window.localStorage.getItem('request'));
 const numberOfArticles = reqest.length;
@@ -11,8 +11,6 @@ const amountOfQuerys = document.querySelector('#amount-of-querys');
 mouth.textContent = 'Дата ' + '(' + nowMonth() + ')';
 newsOfWeek.textContent = numberOfArticles;
 
-
-
 const week = [
   {day : document.querySelector('#day-1-name')},
   {day : document.querySelector('#day-2-name')},
@@ -21,7 +19,8 @@ const week = [
   {day : document.querySelector('#day-5-name')},
   {day : document.querySelector('#day-6-name')},
   {day : document.querySelector('#day-7-name')}
-]
+];
+
 const weekDiagramRightColumn = [
   {diagram : document.querySelector('#day-1')},
   {diagram : document.querySelector('#day-2')},
@@ -31,15 +30,12 @@ const weekDiagramRightColumn = [
   {diagram : document.querySelector('#day-6')},
   {diagram : document.querySelector('#day-7')}
 ]
-console.log(analyticsInformation)
 let countOfQuery = 0;
 week.forEach((element, index) => {
-  console.log(analyticsInformation[index].amountArticle)
   element.day.textContent = analyticsInformation[index].dayIs + ', ' + analyticsInformation[index].dateDay;
   let amount = analyticsInformation[index].amountKeyWord;
   weekDiagramRightColumn[index].diagram.textContent = amount;
   weekDiagramRightColumn[index].diagram.style.background = `linear-gradient(to right, #2F71E5 ${amount}%, #F5F6F7 ${amount}%, #F5F6F7 100%)`
   countOfQuery += amount;
-  console.log(countOfQuery)
 });
 amountOfQuerys.textContent = countOfQuery;
