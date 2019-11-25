@@ -63,6 +63,7 @@ export default class GitCard{
     linkElement.appendChild(cardComment);
     elementCard.appendChild(linkElement);
     elementCard.appendChild(elementTitle);
+    elementCard.style.position = 'absolute'
     return elementCard;
   }
 }
