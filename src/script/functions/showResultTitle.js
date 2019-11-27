@@ -1,5 +1,4 @@
 const _resultBlock = document.querySelector('.results');
-
 const _cards = document.querySelector('.results__container_m-r-l-8px')
 const _resultButton = document.querySelector('.results__button');
 const _analyticBlock = document.querySelector('.results__analitic');

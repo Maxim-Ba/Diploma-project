@@ -16,7 +16,6 @@ export default class showLineOfCards{
       return this.resultButton.classList.add('results__button_closed');
     }
     for (let i = 0; i < 3; i++) {
-      console.log(this.informationArticles)
       new Card(this.informationArticles.shift(), this.containerCards);
     }
   }

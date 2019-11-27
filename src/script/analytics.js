@@ -1,7 +1,7 @@
 import '../pages/analytics.css';
 import sortByDay from './modules/countAnalytics';
 import {nowMonth} from './functions/nowDay';
-
+import renameTitle from './functions/renameTitle';
 const reqest = JSON.parse(window.localStorage.getItem('request'));
 const numberOfArticles = reqest.length;
 const analyticsInformation = sortByDay(reqest);
@@ -10,7 +10,7 @@ const newsOfWeek = document.querySelector('#news-of-week');
 const amountOfQuerys = document.querySelector('#amount-of-querys');
 mouth.textContent = 'Дата ' + '(' + nowMonth() + ')';
 newsOfWeek.textContent = numberOfArticles;
-
+renameTitle( document.querySelector('.general-data-analytics__query'), window.localStorage.getItem('q'))
 const week = [
   {day : document.querySelector('#day-1-name')},
   {day : document.querySelector('#day-2-name')},

@@ -4,19 +4,15 @@ import GitApi from './modules/GitApi';
 import GitCard from './modules/gitCard';
 
 const git = new GitApi();
-
-
 const parentElement = document.querySelector('.git__slider');
 const arrOfGitCards = git.query()
   .then(res =>{
     res.forEach((element) => {
       new GitCard(element, parentElement)
-      
     });
   })
   .then(() =>{
     const elem = document.querySelector('.git__slider');
-
     const flkty = new Flickity( elem, {
       cellAlign: 'left',
       contain: true
@@ -26,7 +22,6 @@ const arrOfGitCards = git.query()
     if ( !this.isActive ) {
       return;
     }
-    
     if(window.innerWidth < 600){
       this.options.draggable = false;
       this.options.wrapAround = false;

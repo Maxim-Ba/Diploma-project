@@ -11,6 +11,11 @@ export default class Validate{
   }
   _checkField(){
     const pattern = /^([А-ЯЁёа-яёA-Za-z0-9_-\s№:?()!])*$/g;
+    if (this.fieldInput.value.length < 1){
+      this.warningField.textContent = 'Нужно ввести ключевое слово';
+      this.warningField.classList.remove('header__error_closed');
+      return this._makeDisable(this.button, true);
+    }
     if (this.fieldInput.value.length < 2){
       this.warningField.textContent = 'Длинна должна быть > 2-х букв';
       this.warningField.classList.remove('header__error_closed');
