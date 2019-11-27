@@ -7,7 +7,7 @@
   <meta name="author" content="Balashov Maxim">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer by Balashov Maxim</title>
-  <link type="text/css" rel="stylesheet" href="./style/index.a19e5c81e1d78f9cd4c3.css?676186cea81e3a0f45e2">
+  <link type="text/css" rel="stylesheet" href="./style/index.5a5095f10b8ad027e680.css?8f68a2adfa4a37721ce8">
   <link rel="icon" href="./images/A-blue.ico">
 </head>
 <body>
@@ -28,17 +28,17 @@
           <p class="header__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в носотях за прошедшую неделю.</p>
         </div>
         
-        <form class="header__form" action="./index.html">
-          <input class="header__input" type="text" placeholder="Введите тему новости" pattern="^([А-Яёа-яёA-Za-z0-9_\-\s])*$" minlength=2 value="">
-          <span class="header__error">Нужно ввести ключевое слово</span>
-          <button class="button button_blue">Искать</button>
+        <form class="header__form" action="#">
+          <input class="header__input" type="text" placeholder="Введите тему новости" value="" required>
+          <span class="header__error header__error_closed">Нужно ввести ключевое слово</span>
+          <button class="button button_blue" type="submit" disabled>Искать</button>
         </form>
       </section>
     </header>
     <main class="main">
       <section class="loading loading_closed">
         <i class="loading__circle-preloader"></i>
-        <h3 class="loading__message">Идет поиск новостей...</h3>
+        <h3 class="loading__message">Идет поиск новостей...</h3> 
       </section>
       <section class="nothing-find nothing-find_closed">
         <img class="nothing-find__logo" src="./images/not-found_v1.svg" alt="nothing find" >
@@ -48,13 +48,13 @@
       <section class="results results_closed">
         <div class="content-margin-l-r results__container">
           <h3 class="results__title">Результаты поиска</h3>
-          <a class="results__analitic" href="./analytics.html">Посмотреть аналитику ></a>
+          <a class="results__analitic results__analitic_closed" href="./analytics.html">Посмотреть аналитику ></a>
         </div>  
         <div class="content-margin-l-r results__container">
-          <div class="results__container_m-r-l-8px">
+          <div class="results__container_m-r-l-8px results__container_closed">
           </div>        
         </div>
-        <button class="button results__button">Показать еще</button>
+        <button class="button results__button results__button_closed">Показать еще</button>
       </section>
       <section class="about-author">
           <div class="content-margin-l-r about-author__container">
@@ -95,7 +95,7 @@
       </footer>
     </main>
   </div>
-  <script type="module" src="index.b7835314b22e5e0ad9d7.js?676186cea81e3a0f45e2"></script>
+  <script type="module" src="index.ef349bdbc23354a62579.js?8f68a2adfa4a37721ce8"></script>
 </body>
 
 </html>
