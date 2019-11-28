@@ -3,4 +3,4 @@ export default function diasableInput(input) {
     return input.disabled = false;
   }
   return input.disabled = true;
-}
+};

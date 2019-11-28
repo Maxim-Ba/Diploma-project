@@ -1,24 +1,18 @@
 import formatDate from '../functions/formatDate'
 
-export default class GitCard{
-  constructor(cardObject, parentElement){
-    this.authorAvatar = this.addThreeDot(cardObject.author.avatar_url);
+export default class GitCard {
+  constructor(cardObject, parentElement) {
+    this.authorAvatar = cardObject.author.avatar_url;
     this.commitMessage = cardObject.commit.message;
     this.commiterDate = formatDate(cardObject.commit.committer.date);
     this.commiterEmail = cardObject.commit.committer.email;
     this.commiterName = cardObject.commit.committer.name;
 
-    this.addThreeDot = this.addThreeDot;
     this.parentElement = parentElement;
-    parentElement.appendChild(this.render());
-  }
-  addThreeDot(string){
-    if (document.body.clientWidth > 900) {
-      return string.slice(0, 186) + '...';
-    }
-    return string.slice(0, 111) + '...';
-  }
-  render(){
+    parentElement.appendChild(this._render());
+  };
+
+  _render() {
     //make elements and attributs
     const elementCard = document.createElement('article');
     elementCard.classList.add('card', 'carousel-cell');
@@ -46,7 +40,7 @@ export default class GitCard{
     cardComment.classList.add('card__comment');
 
     //make textContent
-    cardComment.textContent =  this.commitMessage;
+    cardComment.textContent = this.commitMessage;
     cardEmail.textContent = this.commiterEmail;
     cardAuthor.textContent = this.commiterName;
     cardDate.textContent = this.commiterDate;
@@ -63,8 +57,7 @@ export default class GitCard{
     linkElement.appendChild(cardComment);
     elementCard.appendChild(linkElement);
     elementCard.appendChild(elementTitle);
-    elementCard.style.position = 'absolute'
+    elementCard.style.position = 'absolute';
     return elementCard;
   }
-}
-
+};

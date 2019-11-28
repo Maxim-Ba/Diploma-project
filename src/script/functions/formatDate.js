@@ -1,7 +1,7 @@
-function formatOrderDataElements(arr) {
-  return [arr[2], toMonthWord(arr[1]), arr[0]];
-}
-function toMonthWord(month) {
+function _formatOrderDataElements(arr) {
+  return [arr[2], _toMonthWord(arr[1]), arr[0]];
+};
+function _toMonthWord(month) {
   const monthArr = {
     '01': 'января',
     '02': 'февраля',
@@ -15,12 +15,12 @@ function toMonthWord(month) {
     '10': 'октября',
     '11': 'ноября',
     '12': 'декабря'
-  }
+  };
   return monthArr[month];
-}
+};
 
 export default function formatDate(DateISO) {
   const arrDate = DateISO.substring(0, 10).split('-');
-  const correctOrderDate = formatOrderDataElements(arrDate).join(' ');
+  const correctOrderDate = _formatOrderDataElements(arrDate).join(' ');
   return correctOrderDate;
-}
+};

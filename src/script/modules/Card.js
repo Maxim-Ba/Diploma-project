@@ -1,23 +1,24 @@
-import formatDate from '../functions/formatDate'
+import formatDate from '../functions/formatDate';
 
-export default class Card{
-  constructor(cardObject, parentElement){
+export default class Card {
+  constructor(cardObject, parentElement) {
     this.source = cardObject.source.name;
     this.title = cardObject.title;
-    this.addThreeDot = this.addThreeDot;
     this.publishedAt = formatDate(cardObject.publishedAt);
-    this.description = this.addThreeDot(cardObject.description);
+    this.description = this._addThreeDot(cardObject.description);
     this.urlToImage = cardObject.urlToImage;
     this.parentElement = parentElement;
-    parentElement.appendChild(this.render());
-  }
-  addThreeDot(string){
+    parentElement.appendChild(this._render());
+  };
+  _addThreeDot(string) {
+    const MAX_SIMBOLS_IN_CARD = 186;
+    const MAX_SIMBOLS_IN_CARD_MOBILE = 111;
     if (document.body.clientWidth > 900) {
-      return string.slice(0, 186) + '...';
+      return string.slice(0, MAX_SIMBOLS_IN_CARD) + '...';
     }
-    return string.slice(0, 111) + '...';
-  }
-  render(){
+    return string.slice(0, MAX_SIMBOLS_IN_CARD_MOBILE) + '...';
+  };
+  _render() {
     //make elements and attributs
     const elementCard = document.createElement('article');
     elementCard.classList.add('article');
@@ -35,26 +36,25 @@ export default class Card{
     dateElement.classList.add('article__date');
     const titleElement = document.createElement('h4');
     titleElement.classList.add('article__title');
-    const discriptionElement = document.createElement('p');
-    discriptionElement.classList.add('article__discription');
+    const descriptionElement = document.createElement('p');
+    descriptionElement.classList.add('article__description');
     const sourceElement = document.createElement('p');
     sourceElement.classList.add('article__source');
     //make textContent
     dateElement.textContent = this.publishedAt;
     titleElement.textContent = this.title;
-    discriptionElement.textContent = this.description;
+    descriptionElement.textContent = this.description;
     sourceElement.textContent = this.source;
     //appendChild
-    
+
     containerDiscrElement.appendChild(dateElement);
     containerDiscrElement.appendChild(titleElement);
-    containerDiscrElement.appendChild(discriptionElement);
+    containerDiscrElement.appendChild(descriptionElement);
     containerDiscrElement.appendChild(sourceElement);
-    
+
     linkElement.appendChild(imgElement);
     linkElement.appendChild(containerDiscrElement);
     elementCard.appendChild(linkElement);
     return elementCard;
-  }
-}
-
+  };
+};
