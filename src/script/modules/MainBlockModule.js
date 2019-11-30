@@ -20,6 +20,6 @@ export default class HidenOrShowedBlock {
     } else {
       this.hide = false;
       this.makeVisible();
-    }
+    };
   };
 };

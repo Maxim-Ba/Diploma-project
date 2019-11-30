@@ -21,9 +21,9 @@ const warningField = document.querySelector('.header__error');
 const validateForm = new Validate(formElement, queryButton, warningField);
 // ---------Api
 const news = new NewsApi();
-const LoadingBlock = new HidenOrShowedBlock(loadingBlock, 'loading');
-const NothingFindBlock = new HidenOrShowedBlock(nothingFindBlock, 'nothing-find');
-const ResultsBlock = new HidenOrShowedBlock(resultsBlock, 'results');
+const loading = new HidenOrShowedBlock(loadingBlock, 'loading');
+const nothingFind = new HidenOrShowedBlock(nothingFindBlock, 'nothing-find');
+const resultBlock = new HidenOrShowedBlock(resultsBlock, 'results');
 queryButton.addEventListener('click', clickButtonToSendQueryToApi);
 // ---------Показать еще
 const resultButton = document.querySelector('.results__button');
@@ -32,21 +32,21 @@ const showThreeCards = new ShowThreeCards(resultButton, containerCards, Card);
 function showRequestInformation() {
   hideResultTitle();
   disableInput(queryInput);
-  LoadingBlock.makeHide();
+  loading.makeHide();
   const informationArticles = JSON.parse(window.sessionStorage.request);
   if (informationArticles.length === 0) {
-    NothingFindBlock.makeVisible();
+    nothingFind.makeVisible();
     return console.log(`Ничего не найдено`);
   }
   showThreeCards.informationArticles = informationArticles;
   showThreeCards.showThreeCards();
-  ResultsBlock.makeVisible();
+  resultBlock.makeVisible();
 };
 function clickButtonToSendQueryToApi() {
-  LoadingBlock.makeVisible();
+  loading.makeVisible();
   disableInput(queryInput);
-  NothingFindBlock.makeHide();
-  ResultsBlock.makeHide();
+  nothingFind.makeHide();
+  resultBlock.makeHide();
   showResultTitle();
   removeOldCards(containerCards);
   news.getArticlesInformation(queryInput.value)
@@ -62,7 +62,7 @@ function clickButtonToSendQueryToApi() {
         err = `Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.`;
       }
       disableInput(queryInput);
-      LoadingBlock.makeHide();
+      loading.makeHide();
       renderError(err);
     });
   event.preventDefault();

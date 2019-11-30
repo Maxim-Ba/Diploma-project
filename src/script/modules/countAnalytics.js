@@ -17,7 +17,7 @@ export default function sortByDay(req) {
     req.forEach(element => {
       if (new Date(element.publishedAt).getDate() === prevDay) {
         obj[key].push(element);
-      }
+      };
     });
     i = i + 1;
   };
@@ -32,7 +32,7 @@ function _format(obj) {
       obj[key][0].title = '';
       const date = new Date(new Date().setDate(new Date().getDate() - key)).toISOString();
       obj[key][0].publishedAt = date;
-    }
+    };
   };
   return obj;
 };
@@ -102,7 +102,7 @@ function _amountKeyWord(keyWord, arr) {
     if (element.description.match(keyWord) != null) {
       result += element.description.match(keyWord).length;
     }
-  })
+  });
   return result;
 };
 

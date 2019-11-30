@@ -15,7 +15,6 @@ export default class GitApi {
       })
       .then((res) => {
         return res;
-      }
-      )
+      })
   };
 };

@@ -29,7 +29,7 @@ const weekDiagramRightColumn = [
   { diagram: document.querySelector('#day-5') },
   { diagram: document.querySelector('#day-6') },
   { diagram: document.querySelector('#day-7') }
-]
+];
 let countOfQuery = 0;
 week.forEach((element, index) => {
   element.day.textContent = analyticsInformation[index].dayIs + ', ' + analyticsInformation[index].dateDay;

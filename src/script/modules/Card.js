@@ -15,7 +15,7 @@ export default class Card {
     const MAX_SIMBOLS_IN_CARD_MOBILE = 111;
     if (document.body.clientWidth > 900) {
       return string.slice(0, MAX_SIMBOLS_IN_CARD) + '...';
-    }
+    };
     return string.slice(0, MAX_SIMBOLS_IN_CARD_MOBILE) + '...';
   };
   _render() {

@@ -16,9 +16,9 @@ export default class ShowThreeCards {
       });
       this.informationArticles = [];
       return this.resultButton.classList.add('results__button_closed');
-    }
+    };
     for (let i = 0; i < (LIMIT_LENGTH_OF_NEWSCARD_LINE-1); i++) {
       new this.callBack(this.informationArticles.shift(), this.containerCards);
-    }
+    };
   };
 };

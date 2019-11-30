@@ -1,4 +1,4 @@
-import formatDate from '../functions/formatDate'
+import formatDate from '../functions/formatDate';
 
 export default class GitCard {
   constructor(cardObject, parentElement) {

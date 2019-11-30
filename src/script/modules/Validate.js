@@ -15,17 +15,17 @@ export default class Validate {
       this.warningField.textContent = 'Нужно ввести ключевое слово';
       this.warningField.classList.remove('header__error_closed');
       return this._makeDisable(this.button, true);
-    }
+    };
     if (this.fieldInput.value.length < 2) {
       this.warningField.textContent = 'Длинна должна быть > 2-х букв';
       this.warningField.classList.remove('header__error_closed');
       return this._makeDisable(this.button, true);
-    }
+    };
     if (!pattern.test(this.fieldInput.value)) {
       this.warningField.textContent = 'В поиске недопустимый символ';
       this.warningField.classList.remove('header__error_closed');
       return this._makeDisable(this.button, true);
-    }
+    };
     this.warningField.classList.add('header__error_closed');
     return this._makeDisable(this.button, false);
   };
