@@ -1,3 +1,4 @@
+@import url(./_closed/results__button_closed.css);
 .results__button{
     position: relative;
     width: calc(288*100%/1232);

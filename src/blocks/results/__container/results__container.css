@@ -1,4 +1,5 @@
 @import url(./_m-r-l-8px/results__container_m-r-l-8px.css);
+@import url(./_closed/results__container_closed.css);
 .results__container{
     display: flex;
     justify-content: space-between;
